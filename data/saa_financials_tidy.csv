@@ -1,0 +1,1380 @@
+statement,entity,year,line_item,label_key,metric,value_rm,source_sheet
+Balance sheet,Company,2010,Accumulated loss,accumulated loss,accumulated_loss,-15080.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Cash and cash equivalents,cash and cash equivalents,cash,3111.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Derivatives,current assets: derivatives,,76.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Investments in subsidiaries,current assets: investments in subsidiaries,,1653.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3719.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Provisions,current liabilities: provisions,provisions_current,727.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,553.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Finance lease obligation,finance lease obligation,,10.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Intangible assets,intangible assets,intangibles,85.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Inventories,inventories,inventories,57.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Investments,investments,,122.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,1405.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Provisions,liabilities non-current liabilities: provisions,,1536.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Long-term loans,long-term loans,long_term_loans,2139.0,balance sheet 2010-2012
+Balance sheet,Company,2010,"Non-current assets held-for-sale and assets
+of disposal groups",non-current assets held-for-sale and assets of disposal groups,,10.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Investments in subsidiaries,non-current assets: investments in subsidiaries,,338.0,balance sheet 2010-2012
+Balance sheet,Company,2010,"Property, aircraft and equipment","property, aircraft and equipment",ppe,5784.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Reserves,reserves,reserves,553.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Retirement benefit obligation,retirement benefit obligation,,41.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Share capital,share capital,share_capital,13126.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Total assets,total assets,total_assets,15032.0,balance sheet 2010-2012
+Balance sheet,Company,2010,total current assets,total current assets,current_assets,8815.0,balance sheet 2010-2012
+Balance sheet,Company,2010,total current liabilities,total current liabilities,current_liabilities,10012.0,balance sheet 2010-2012
+Balance sheet,Company,2010,total equity,total equity,total_equity,-101.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,15032.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Total liabilities,total liabilities,total_liabilities,15133.0,balance sheet 2010-2012
+Balance sheet,Company,2010,total non-current assets,total non-current assets,non_current_assets,6207.0,balance sheet 2010-2012
+Balance sheet,Company,2010,total non-current liabilities,total non-current liabilities,non_current_liabilities,5121.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Trade and other payables,trade and other payables,payables,5003.0,balance sheet 2010-2012
+Balance sheet,Company,2010,Trade and other receivables,trade and other receivables,receivables,3796.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Accumulated loss,accumulated loss,accumulated_loss,-14466.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Cash and cash equivalents,cash and cash equivalents,cash,1875.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Derivatives,current assets: derivatives,,379.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Investments in subsidiaries,current assets: investments in subsidiaries,,1313.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3393.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Derivatives,current liabilities: derivatives,,14.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Provisions,current liabilities: provisions,provisions_current,723.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,407.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Intangible assets,intangible assets,intangibles,107.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Inventories,inventories,inventories,80.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Investments,investments,,6.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,1188.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Provisions,liabilities non-current liabilities: provisions,,1221.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Long-term loans,long-term loans,long_term_loans,1671.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Investments in subsidiaries,non-current assets: investments in subsidiaries,,533.0,balance sheet 2010-2012
+Balance sheet,Company,2011,"Property, aircraft and equipment","property, aircraft and equipment",ppe,5502.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Reserves,reserves,reserves,521.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Retirement benefit obligation,retirement benefit obligation,,39.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Share capital,share capital,share_capital,13126.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Total assets,total assets,total_assets,13994.0,balance sheet 2010-2012
+Balance sheet,Company,2011,total current assets,total current assets,current_assets,7852.0,balance sheet 2010-2012
+Balance sheet,Company,2011,total current liabilities,total current liabilities,current_liabilities,9394.0,balance sheet 2010-2012
+Balance sheet,Company,2011,total equity,total equity,total_equity,481.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,13994.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Total liabilities,total liabilities,total_liabilities,13513.0,balance sheet 2010-2012
+Balance sheet,Company,2011,total non-current assets,total non-current assets,non_current_assets,6142.0,balance sheet 2010-2012
+Balance sheet,Company,2011,total non-current liabilities,total non-current liabilities,non_current_liabilities,4119.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Trade and other payables,trade and other payables,payables,4857.0,balance sheet 2010-2012
+Balance sheet,Company,2011,Trade and other receivables,trade and other receivables,receivables,4199.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Accumulated loss,accumulated loss,accumulated_loss,-15190.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Bank overdraft,bank overdraft,bank_overdraft,1535.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Cash and cash equivalents,cash and cash equivalents,cash,1139.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Derivatives,current assets: derivatives,,262.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Investments in subsidiaries,current assets: investments in subsidiaries,,1305.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3282.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Derivatives,current liabilities: derivatives,,11.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Provisions,current liabilities: provisions,provisions_current,290.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,471.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Intangible assets,intangible assets,intangibles,83.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Inventories,inventories,inventories,92.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Investments,investments,,9.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,983.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Provisions,liabilities non-current liabilities: provisions,,1564.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Long-term loans,long-term loans,long_term_loans,1287.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Investments in subsidiaries,non-current assets: investments in subsidiaries,,830.0,balance sheet 2010-2012
+Balance sheet,Company,2012,"Property, aircraft and equipment","property, aircraft and equipment",ppe,6031.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Reserves,reserves,reserves,599.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Retirement benefit asset,retirement benefit asset,,31.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Retirement benefit obligation,retirement benefit obligation,,46.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Share capital,share capital,share_capital,13126.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Total assets,total assets,total_assets,14137.0,balance sheet 2010-2012
+Balance sheet,Company,2012,total current assets,total current assets,current_assets,7162.0,balance sheet 2010-2012
+Balance sheet,Company,2012,total current liabilities,total current liabilities,current_liabilities,10422.0,balance sheet 2010-2012
+Balance sheet,Company,2012,total equity,total equity,total_equity,-165.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,14137.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Total liabilities,total liabilities,total_liabilities,14302.0,balance sheet 2010-2012
+Balance sheet,Company,2012,total non-current assets,total non-current assets,non_current_assets,6975.0,balance sheet 2010-2012
+Balance sheet,Company,2012,total non-current liabilities,total non-current liabilities,non_current_liabilities,3880.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Trade and other payables,trade and other payables,payables,4833.0,balance sheet 2010-2012
+Balance sheet,Company,2012,Trade and other receivables,trade and other receivables,receivables,4355.0,balance sheet 2010-2012
+Balance sheet,Company,2015,Accumulated Loss,accumulated loss,accumulated_loss,-24362.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Bank overdraft,bank overdraft,bank_overdraft,1155.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Cash and cash equivalents,cash and cash equivalents,cash,519.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Amounts receivable from subsidiaries,current assets: amounts receivable from subsidiaries,,1262.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Derivatives,current assets: derivatives,,171.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3415.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Derivatives,current liabilities: derivatives,,346.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Provisions,current liabilities: provisions,provisions_current,511.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,4634.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Intangible assets,intangible assets,intangibles,155.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Inventories,inventories,inventories,121.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Investments,investments,,18.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Long-term loans,long-term loans,long_term_loans,4969.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,"Non-current assets classified as
+held-for-sale and assets of
+disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Amounts receivable from subsidiaries,non-current assets: amounts receivable from subsidiaries,,178.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Investments in subsidiaries,non-current assets: investments in subsidiaries,,1122.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,715.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Provisions,non-current liabilities: provisions,provisions_non_current,2135.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Non-current prepayments,non-current prepayments,,2184.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,"Property, aircraft and equipment","property, aircraft and equipment",ppe,3233.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Reserves,reserves,reserves,529.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Retirement benefit asset,retirement benefit asset,,38.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Retirement benefit obligation,retirement benefit obligation,,91.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Share capital,share capital,share_capital,13126.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Total assets,total assets,total_assets,13932.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,total current assets,total current assets,current_assets,6923.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,total current liabilities,total current liabilities,current_liabilities,16729.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,total equity,total equity,total_equity,-10707.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,13932.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Total liabilities,total liabilities,total_liabilities,24639.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,total non-current assets,total non-current assets,non_current_assets,6910.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,total non-current liabilities,total non-current liabilities,non_current_liabilities,7910.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Trade and other payables,trade and other payables,payables,6668.0,Balance sheet 2015-2017
+Balance sheet,Company,2015,Trade and other receivables,trade and other receivables,receivables,4832.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Accumulated Loss,accumulated loss,accumulated_loss,-25676.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Cash and cash equivalents,cash and cash equivalents,cash,2044.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Amounts receivable from subsidiaries,current assets: amounts receivable from subsidiaries,,1298.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Derivatives,current assets: derivatives,,84.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,4069.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Derivatives,current liabilities: derivatives,,4.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Provisions,current liabilities: provisions,provisions_current,1390.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,6243.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Intangible assets,intangible assets,intangibles,188.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Inventories,inventories,inventories,101.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Investments,investments,,23.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Long-term loans,long-term loans,long_term_loans,7800.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,"Non-current assets classified as
+held-for-sale and assets of
+disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Amounts receivable from subsidiaries,non-current assets: amounts receivable from subsidiaries,,178.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Investments in subsidiaries,non-current assets: investments in subsidiaries,,1032.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,633.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Provisions,non-current liabilities: provisions,provisions_non_current,2291.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Non-current prepayments,non-current prepayments,,1880.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,"Property, aircraft and equipment","property, aircraft and equipment",ppe,3146.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Reserves,reserves,reserves,391.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Retirement benefit asset,retirement benefit asset,,38.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Retirement benefit obligation,retirement benefit obligation,,128.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Share capital,share capital,share_capital,13126.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Total assets,total assets,total_assets,16751.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,total current assets,total current assets,current_assets,10190.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,total current liabilities,total current liabilities,current_liabilities,18058.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,total equity,total equity,total_equity,-12159.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,16751.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Total liabilities,total liabilities,total_liabilities,28910.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,total non-current assets,total non-current assets,non_current_assets,6462.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,total non-current liabilities,total non-current liabilities,non_current_liabilities,10852.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Trade and other payables,trade and other payables,payables,6352.0,Balance sheet 2015-2017
+Balance sheet,Company,2016,Trade and other receivables,trade and other receivables,receivables,6640.0,Balance sheet 2015-2017
+Balance sheet,Company,2017,Accumulated Loss,accumulated loss,accumulated_loss,-32188.0,Balance Sheet
+Balance sheet,Company,2017,Amounts payable to subsidiaries,amounts payable to subsidiaries,,357.0,Balance Sheet
+Balance sheet,Company,2017,Bank overdraft,bank overdraft,bank_overdraft,663.0,Balance Sheet
+Balance sheet,Company,2017,Cash and cash equivalents,cash and cash equivalents,cash,2212.0,Balance Sheet
+Balance sheet,Company,2017,Aircraft and other deposits,current assets: aircraft and other deposits,,659.0,Balance Sheet
+Balance sheet,Company,2017,Amounts receivable from subsidiaries,current assets: amounts receivable from subsidiaries,,1212.0,Balance Sheet
+Balance sheet,Company,2017,Derivatives,current assets: derivatives,,34.0,Balance Sheet
+Balance sheet,Company,2017,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,4158.0,Balance Sheet
+Balance sheet,Company,2017,Derivatives,current liabilities: derivatives,,1.0,Balance Sheet
+Balance sheet,Company,2017,Provisions,current liabilities: provisions,provisions_current,995.0,Balance Sheet
+Balance sheet,Company,2017,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,8133.0,Balance Sheet
+Balance sheet,Company,2017,Intangible assets,intangible assets,intangibles,224.0,Balance Sheet
+Balance sheet,Company,2017,Inventories,inventories,inventories,89.0,Balance Sheet
+Balance sheet,Company,2017,Investments,investments,,29.0,Balance Sheet
+Balance sheet,Company,2017,Long–term loans,long-term loans,long_term_loans,7800.0,Balance Sheet
+Balance sheet,Company,2017,"Non–current assets classified as held–for–sale
+and assets of disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance Sheet
+Balance sheet,Company,2017,Aircraft and other deposits,non-current assets: aircraft and other deposits,,2617.0,Balance Sheet
+Balance sheet,Company,2017,Investments in subsidiaries,non-current assets: investments in subsidiaries,,336.0,Balance Sheet
+Balance sheet,Company,2017,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,668.0,Balance Sheet
+Balance sheet,Company,2017,Provisions,non-current liabilities: provisions,provisions_non_current,2314.0,Balance Sheet
+Balance sheet,Company,2017,Non-current prepayments,non-current prepayments,,1710.0,Balance sheet 2015-2017
+Balance sheet,Company,2017,Other long–term liabilities,other long-term liabilities,,253.0,Balance Sheet
+Balance sheet,Company,2017,"Property, aircraft and equipment","property, aircraft and equipment",ppe,3114.0,Balance Sheet
+Balance sheet,Company,2017,Reserves,reserves,reserves,446.0,Balance Sheet
+Balance sheet,Company,2017,Retirement benefit asset,retirement benefit asset,,26.0,Balance Sheet
+Balance sheet,Company,2017,Retirement benefit obligation,retirement benefit obligation,,121.0,Balance Sheet
+Balance sheet,Company,2017,Share capital,share capital,share_capital,13126.0,Balance Sheet
+Balance sheet,Company,2017,Total assets,total assets,total_assets,14570.0,Balance Sheet
+Balance sheet,Company,2017,total current assets,total current assets,current_assets,8154.0,Balance Sheet
+Balance sheet,Company,2017,total current liabilities,total current liabilities,current_liabilities,22030.0,Balance Sheet
+Balance sheet,Company,2017,total equity,total equity,total_equity,-18616.0,Balance Sheet
+Balance sheet,Company,2017,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,14570.0,Balance Sheet
+Balance sheet,Company,2017,Total liabilities,total liabilities,total_liabilities,33186.0,Balance Sheet
+Balance sheet,Company,2017,total non-current assets,total non-current assets,non_current_assets,6317.0,Balance Sheet
+Balance sheet,Company,2017,total non-current liabilities,total non-current liabilities,non_current_liabilities,11156.0,Balance Sheet
+Balance sheet,Company,2017,Trade and other payables,trade and other payables,payables,7723.0,Balance Sheet
+Balance sheet,Company,2017,Trade and other receivables,trade and other receivables,receivables,3919.0,Balance Sheet
+Balance sheet,Company,2018,Accumulated Loss,accumulated loss,accumulated_loss,-36925.0,Balance Sheet
+Balance sheet,Company,2018,Amounts payable to subsidiaries,amounts payable to subsidiaries,,488.0,Balance Sheet
+Balance sheet,Company,2018,Bank overdraft,bank overdraft,bank_overdraft,828.0,Balance Sheet
+Balance sheet,Company,2018,Cash and cash equivalents,cash and cash equivalents,cash,1325.0,Balance Sheet
+Balance sheet,Company,2018,Aircraft and other deposits,current assets: aircraft and other deposits,,315.0,Balance Sheet
+Balance sheet,Company,2018,Derivatives,current assets: derivatives,,2.0,Balance Sheet
+Balance sheet,Company,2018,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3193.0,Balance Sheet
+Balance sheet,Company,2018,Provisions,current liabilities: provisions,provisions_current,928.0,Balance Sheet
+Balance sheet,Company,2018,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,7659.0,Balance Sheet
+Balance sheet,Company,2018,Intangible assets,intangible assets,intangibles,81.0,Balance Sheet
+Balance sheet,Company,2018,Inventories,inventories,inventories,100.0,Balance Sheet
+Balance sheet,Company,2018,Investments,investments,,35.0,Balance Sheet
+Balance sheet,Company,2018,Long–term loans,long-term loans,long_term_loans,785.0,Balance Sheet
+Balance sheet,Company,2018,"Non–current assets classified as held–for–sale
+and assets of disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance Sheet
+Balance sheet,Company,2018,Aircraft and other deposits,non-current assets: aircraft and other deposits,,2040.0,Balance Sheet
+Balance sheet,Company,2018,Investments in subsidiaries,non-current assets: investments in subsidiaries,,2134.0,Balance Sheet
+Balance sheet,Company,2018,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,568.0,Balance Sheet
+Balance sheet,Company,2018,Provisions,non-current liabilities: provisions,provisions_non_current,2693.0,Balance Sheet
+Balance sheet,Company,2018,Other long–term liabilities,other long-term liabilities,,143.0,Balance Sheet
+Balance sheet,Company,2018,"Property, aircraft and equipment","property, aircraft and equipment",ppe,2806.0,Balance Sheet
+Balance sheet,Company,2018,Reserves,reserves,reserves,453.0,Balance Sheet
+Balance sheet,Company,2018,Retirement benefit asset,retirement benefit asset,,22.0,Balance Sheet
+Balance sheet,Company,2018,Retirement benefit obligation,retirement benefit obligation,,113.0,Balance Sheet
+Balance sheet,Company,2018,Share capital,share capital,share_capital,13126.0,Balance Sheet
+Balance sheet,Company,2018,Shareholder contribution,shareholder contribution,shareholder_contribution,10000.0,Balance Sheet
+Balance sheet,Company,2018,Total assets,total assets,total_assets,11825.0,Balance Sheet
+Balance sheet,Company,2018,total current assets,total current assets,current_assets,4643.0,Balance Sheet
+Balance sheet,Company,2018,total current liabilities,total current liabilities,current_liabilities,20869.0,Balance Sheet
+Balance sheet,Company,2018,total equity,total equity,total_equity,-13346.0,Balance Sheet
+Balance sheet,Company,2018,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,11825.0,Balance Sheet
+Balance sheet,Company,2018,Total liabilities,total liabilities,total_liabilities,25171.0,Balance Sheet
+Balance sheet,Company,2018,total non-current assets,total non-current assets,non_current_assets,7083.0,Balance Sheet
+Balance sheet,Company,2018,total non-current liabilities,total non-current liabilities,non_current_liabilities,4302.0,Balance Sheet
+Balance sheet,Company,2018,Trade and other payables,trade and other payables,payables,7773.0,Balance Sheet
+Balance sheet,Company,2018,Trade and other receivables,trade and other receivables,receivables,2866.0,Balance Sheet
+Balance sheet,Company,2019,Accumulated Loss,accumulated loss,accumulated_loss,-42759.0,Balance Sheet
+Balance sheet,Company,2019,Amounts payable to subsidiaries,amounts payable to subsidiaries,,81.0,Balance Sheet
+Balance sheet,Company,2019,Cash and cash equivalents,cash and cash equivalents,cash,1775.0,Balance Sheet
+Balance sheet,Company,2019,Aircraft and other deposits,current assets: aircraft and other deposits,,260.0,Balance Sheet
+Balance sheet,Company,2019,Amounts receivable from subsidiaries,current assets: amounts receivable from subsidiaries,,434.0,Balance Sheet
+Balance sheet,Company,2019,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3935.0,Balance Sheet
+Balance sheet,Company,2019,Provisions,current liabilities: provisions,provisions_current,992.0,Balance Sheet
+Balance sheet,Company,2019,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,11901.0,Balance Sheet
+Balance sheet,Company,2019,Intangible assets,intangible assets,intangibles,59.0,Balance Sheet
+Balance sheet,Company,2019,Inventories,inventories,inventories,72.0,Balance Sheet
+Balance sheet,Company,2019,Investments,investments,,35.0,Balance Sheet
+Balance sheet,Company,2019,Aircraft and other deposits,non-current assets: aircraft and other deposits,,2587.0,Balance Sheet
+Balance sheet,Company,2019,Investments in subsidiaries,non-current assets: investments in subsidiaries,,2134.0,Balance Sheet
+Balance sheet,Company,2019,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,469.0,Balance Sheet
+Balance sheet,Company,2019,Provisions,non-current liabilities: provisions,provisions_non_current,910.0,Balance Sheet
+Balance sheet,Company,2019,Other long–term liabilities,other long-term liabilities,,747.0,Balance Sheet
+Balance sheet,Company,2019,"Property, aircraft and equipment","property, aircraft and equipment",ppe,2310.0,Balance Sheet
+Balance sheet,Company,2019,Reserves,reserves,reserves,454.0,Balance Sheet
+Balance sheet,Company,2019,Retirement benefit asset,retirement benefit asset,,11.0,Balance Sheet
+Balance sheet,Company,2019,Retirement benefit obligation,retirement benefit obligation,,117.0,Balance Sheet
+Balance sheet,Company,2019,Share capital,share capital,share_capital,13126.0,Balance Sheet
+Balance sheet,Company,2019,Shareholder contribution,shareholder contribution,shareholder_contribution,15000.0,Balance Sheet
+Balance sheet,Company,2019,Total assets,total assets,total_assets,12020.0,Balance Sheet
+Balance sheet,Company,2019,total current assets,total current assets,current_assets,4919.0,Balance Sheet
+Balance sheet,Company,2019,total current liabilities,total current liabilities,current_liabilities,23956.0,Balance Sheet
+Balance sheet,Company,2019,total equity,total equity,total_equity,-14179.0,Balance Sheet
+Balance sheet,Company,2019,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,12020.0,Balance Sheet
+Balance sheet,Company,2019,Total liabilities,total liabilities,total_liabilities,26199.0,Balance Sheet
+Balance sheet,Company,2019,total non-current assets,total non-current assets,non_current_assets,7101.0,Balance Sheet
+Balance sheet,Company,2019,total non-current liabilities,total non-current liabilities,non_current_liabilities,2243.0,Balance Sheet
+Balance sheet,Company,2019,Trade and other payables,trade and other payables,payables,7047.0,Balance Sheet
+Balance sheet,Company,2019,Trade and other receivables,trade and other receivables,receivables,2343.0,Balance Sheet
+Balance sheet,Group,2010,Accumulated loss,accumulated loss,accumulated_loss,-14916.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Cash and cash equivalents,cash and cash equivalents,cash,3402.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Derivatives,current assets: derivatives,,76.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3777.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Provisions,current liabilities: provisions,provisions_current,697.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,553.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Deferred taxation asset,deferred taxation asset,,18.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Finance lease obligation,finance lease obligation,,10.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Intangible assets,intangible assets,intangibles,90.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Inventories,inventories,inventories,649.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Investments,investments,,122.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,1405.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Provisions,liabilities non-current liabilities: provisions,,1536.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Long-term loans,long-term loans,long_term_loans,2139.0,balance sheet 2010-2012
+Balance sheet,Group,2010,"Non-current assets held-for-sale and assets
+of disposal groups",non-current assets held-for-sale and assets of disposal groups,,10.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Other long-term liabilities,other long-term liabilities,,63.0,balance sheet 2010-2012
+Balance sheet,Group,2010,"Property, aircraft and equipment","property, aircraft and equipment",ppe,6548.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Reserves,reserves,reserves,553.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Retirement benefit obligation,retirement benefit obligation,,41.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Share capital,share capital,share_capital,12892.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Total assets,total assets,total_assets,14883.0,balance sheet 2010-2012
+Balance sheet,Group,2010,total current assets,total current assets,current_assets,8217.0,balance sheet 2010-2012
+Balance sheet,Group,2010,total current liabilities,total current liabilities,current_liabilities,9870.0,balance sheet 2010-2012
+Balance sheet,Group,2010,total equity,total equity,total_equity,-171.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,14883.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Total liabilities,total liabilities,total_liabilities,15054.0,balance sheet 2010-2012
+Balance sheet,Group,2010,total non-current assets,total non-current assets,non_current_assets,6656.0,balance sheet 2010-2012
+Balance sheet,Group,2010,total non-current liabilities,total non-current liabilities,non_current_liabilities,5184.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Trade and other payables,trade and other payables,payables,4833.0,balance sheet 2010-2012
+Balance sheet,Group,2010,Trade and other receivables,trade and other receivables,receivables,3968.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Accumulated loss,accumulated loss,accumulated_loss,-14238.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Cash and cash equivalents,cash and cash equivalents,cash,2252.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Derivatives,current assets: derivatives,,379.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3450.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Derivatives,current liabilities: derivatives,,14.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Provisions,current liabilities: provisions,provisions_current,723.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,407.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Deferred taxation asset,deferred taxation asset,,17.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Intangible assets,intangible assets,intangibles,112.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Inventories,inventories,inventories,733.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Investments,investments,,6.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,1188.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Provisions,liabilities non-current liabilities: provisions,,1221.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Long-term loans,long-term loans,long_term_loans,1671.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Other long-term liabilities,other long-term liabilities,,63.0,balance sheet 2010-2012
+Balance sheet,Group,2011,"Property, aircraft and equipment","property, aircraft and equipment",ppe,6251.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Reserves,reserves,reserves,521.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Retirement benefit obligation,retirement benefit obligation,,39.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Share capital,share capital,share_capital,12892.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Total assets,total assets,total_assets,14144.0,balance sheet 2010-2012
+Balance sheet,Group,2011,total current assets,total current assets,current_assets,7764.0,balance sheet 2010-2012
+Balance sheet,Group,2011,total current liabilities,total current liabilities,current_liabilities,9487.0,balance sheet 2010-2012
+Balance sheet,Group,2011,total equity,total equity,total_equity,475.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,14144.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Total liabilities,total liabilities,total_liabilities,13669.0,balance sheet 2010-2012
+Balance sheet,Group,2011,total non-current assets,total non-current assets,non_current_assets,6380.0,balance sheet 2010-2012
+Balance sheet,Group,2011,total non-current liabilities,total non-current liabilities,non_current_liabilities,4182.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Trade and other payables,trade and other payables,payables,4893.0,balance sheet 2010-2012
+Balance sheet,Group,2011,Trade and other receivables,trade and other receivables,receivables,4394.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Accumulated loss,accumulated loss,accumulated_loss,-14738.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Bank overdraft,bank overdraft,bank_overdraft,1569.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Cash and cash equivalents,cash and cash equivalents,cash,1536.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Derivatives,current assets: derivatives,,262.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3355.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Derivatives,current liabilities: derivatives,,11.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Provisions,current liabilities: provisions,provisions_current,290.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,471.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Deferred taxation asset,deferred taxation asset,,419.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Intangible assets,intangible assets,intangibles,91.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Inventories,inventories,inventories,910.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Investments,investments,,9.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Deferred revenue on ticket sales,liabilities non-current liabilities: deferred revenue on ticket sales,,983.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Provisions,liabilities non-current liabilities: provisions,,1564.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Long-term loans,long-term loans,long_term_loans,1305.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Other long-term liabilities,other long-term liabilities,,63.0,balance sheet 2010-2012
+Balance sheet,Group,2012,"Property, aircraft and equipment","property, aircraft and equipment",ppe,7292.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Reserves,reserves,reserves,989.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Retirement benefit asset,retirement benefit asset,,31.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Retirement benefit obligation,retirement benefit obligation,,46.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Share capital,share capital,share_capital,12892.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Subordinated loan guaranteed by government,subordinated loan guaranteed by government,subordinated_loan,1300.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Total assets,total assets,total_assets,15056.0,balance sheet 2010-2012
+Balance sheet,Group,2012,total current assets,total current assets,current_assets,7223.0,balance sheet 2010-2012
+Balance sheet,Group,2012,total current liabilities,total current liabilities,current_liabilities,10652.0,balance sheet 2010-2012
+Balance sheet,Group,2012,total equity,total equity,total_equity,443.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,15056.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Total liabilities,total liabilities,total_liabilities,14613.0,balance sheet 2010-2012
+Balance sheet,Group,2012,total non-current assets,total non-current assets,non_current_assets,7833.0,balance sheet 2010-2012
+Balance sheet,Group,2012,total non-current liabilities,total non-current liabilities,non_current_liabilities,3961.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Trade and other payables,trade and other payables,payables,4956.0,balance sheet 2010-2012
+Balance sheet,Group,2012,Trade and other receivables,trade and other receivables,receivables,4506.0,balance sheet 2010-2012
+Balance sheet,Group,2015,Accumulated Loss,accumulated loss,accumulated_loss,-24593.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Bank overdraft,bank overdraft,bank_overdraft,1185.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Cash and cash equivalents,cash and cash equivalents,cash,1295.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Derivatives,current assets: derivatives,,171.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3590.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Derivatives,current liabilities: derivatives,,346.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Provisions,current liabilities: provisions,provisions_current,511.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,4638.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Current tax payable,current tax payable,,3.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Deferred tax asset,deferred tax asset,,380.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Intangible assets,intangible assets,intangibles,171.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Inventories,inventories,inventories,725.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Investments,investments,,18.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Long-term loans,long-term loans,long_term_loans,4984.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,"Non-current assets classified as
+held-for-sale and assets of
+disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,715.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Provisions,non-current liabilities: provisions,provisions_non_current,2143.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Non-current prepayments,non-current prepayments,,2184.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Other long-term liabilities,other long-term liabilities,,63.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,"Property, aircraft and equipment","property, aircraft and equipment",ppe,4587.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Reserves,reserves,reserves,953.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Retirement benefit asset,retirement benefit asset,,38.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Retirement benefit obligation,retirement benefit obligation,,91.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Share capital,share capital,share_capital,12892.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Total assets,total assets,total_assets,14666.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,total current assets,total current assets,current_assets,7207.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,total current liabilities,total current liabilities,current_liabilities,17418.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,total equity,total equity,total_equity,-10748.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,14666.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Total liabilities,total liabilities,total_liabilities,25414.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,total non-current assets,total non-current assets,non_current_assets,7360.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,total non-current liabilities,total non-current liabilities,non_current_liabilities,7996.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Trade and other payables,trade and other payables,payables,7145.0,Balance sheet 2015-2017
+Balance sheet,Group,2015,Trade and other receivables,trade and other receivables,receivables,4998.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Accumulated Loss,accumulated loss,accumulated_loss,-26071.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Bank overdraft,bank overdraft,bank_overdraft,23.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Cash and cash equivalents,cash and cash equivalents,cash,2701.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Derivatives,current assets: derivatives,,84.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,4212.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Derivatives,current liabilities: derivatives,,4.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Provisions,current liabilities: provisions,provisions_current,1399.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Current portion of long-term loans,current portion of long-term loans,current_portion_loans,6248.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Current tax receivable,current tax receivable,,16.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Deferred tax asset,deferred tax asset,,281.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Intangible assets,intangible assets,intangibles,210.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Inventories,inventories,inventories,727.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Investments,investments,,23.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Long-term loans,long-term loans,long_term_loans,7810.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,"Non-current assets classified as
+held-for-sale and assets of
+disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,633.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Provisions,non-current liabilities: provisions,provisions_non_current,2305.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Non-current prepayments,non-current prepayments,,1880.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Other long-term liabilities,other long-term liabilities,,63.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,"Property, aircraft and equipment","property, aircraft and equipment",ppe,4474.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Reserves,reserves,reserves,815.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Retirement benefit asset,retirement benefit asset,,38.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Retirement benefit obligation,retirement benefit obligation,,128.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Share capital,share capital,share_capital,12892.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Total assets,total assets,total_assets,17258.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,total current assets,total current assets,current_assets,10276.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,total current liabilities,total current liabilities,current_liabilities,18683.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,total equity,total equity,total_equity,-12364.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,17258.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Total liabilities,total liabilities,total_liabilities,29622.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,total non-current assets,total non-current assets,non_current_assets,6883.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,total non-current liabilities,total non-current liabilities,non_current_liabilities,10939.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Trade and other payables,trade and other payables,payables,6797.0,Balance sheet 2015-2017
+Balance sheet,Group,2016,Trade and other receivables,trade and other receivables,receivables,6725.0,Balance sheet 2015-2017
+Balance sheet,Group,2017,Accumulated Loss,accumulated loss,accumulated_loss,-31712.0,Balance Sheet
+Balance sheet,Group,2017,Bank overdraft,bank overdraft,bank_overdraft,684.0,Balance Sheet
+Balance sheet,Group,2017,Cash and cash equivalents,cash and cash equivalents,cash,2600.0,Balance Sheet
+Balance sheet,Group,2017,Aircraft and other deposits,current assets: aircraft and other deposits,,696.0,Balance Sheet
+Balance sheet,Group,2017,Derivatives,current assets: derivatives,,34.0,Balance Sheet
+Balance sheet,Group,2017,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,4375.0,Balance Sheet
+Balance sheet,Group,2017,Derivatives,current liabilities: derivatives,,1.0,Balance Sheet
+Balance sheet,Group,2017,Provisions,current liabilities: provisions,provisions_current,1096.0,Balance Sheet
+Balance sheet,Group,2017,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,8140.0,Balance Sheet
+Balance sheet,Group,2017,Current tax receivable,current tax receivable,,16.0,Balance Sheet
+Balance sheet,Group,2017,Deferred tax asset,deferred tax asset,,41.0,Balance Sheet
+Balance sheet,Group,2017,Intangible assets,intangible assets,intangibles,244.0,Balance Sheet
+Balance sheet,Group,2017,Inventories,inventories,inventories,867.0,Balance Sheet
+Balance sheet,Group,2017,Investments,investments,,29.0,Balance Sheet
+Balance sheet,Group,2017,Long–term loans,long-term loans,long_term_loans,7804.0,Balance Sheet
+Balance sheet,Group,2017,"Non–current assets classified as held–for–sale
+and assets of disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance Sheet
+Balance sheet,Group,2017,Aircraft and other deposits,non-current assets: aircraft and other deposits,,2684.0,Balance Sheet
+Balance sheet,Group,2017,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,668.0,Balance Sheet
+Balance sheet,Group,2017,Provisions,non-current liabilities: provisions,provisions_non_current,2328.0,Balance Sheet
+Balance sheet,Group,2017,Non-current prepayments,non-current prepayments,,1777.0,Balance sheet 2015-2017
+Balance sheet,Group,2017,Other long–term liabilities,other long-term liabilities,,316.0,Balance Sheet
+Balance sheet,Group,2017,"Property, aircraft and equipment","property, aircraft and equipment",ppe,4574.0,Balance Sheet
+Balance sheet,Group,2017,Reserves,reserves,reserves,946.0,Balance Sheet
+Balance sheet,Group,2017,Retirement benefit asset,retirement benefit asset,,26.0,Balance Sheet
+Balance sheet,Group,2017,Retirement benefit obligation,retirement benefit obligation,,121.0,Balance Sheet
+Balance sheet,Group,2017,Share capital,share capital,share_capital,12892.0,Balance Sheet
+Balance sheet,Group,2017,Total assets,total assets,total_assets,15886.0,Balance Sheet
+Balance sheet,Group,2017,total current assets,total current assets,current_assets,8218.0,Balance Sheet
+Balance sheet,Group,2017,total current liabilities,total current liabilities,current_liabilities,22523.0,Balance Sheet
+Balance sheet,Group,2017,total equity,total equity,total_equity,-17874.0,Balance Sheet
+Balance sheet,Group,2017,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,15886.0,Balance Sheet
+Balance sheet,Group,2017,Total liabilities,total liabilities,total_liabilities,33760.0,Balance Sheet
+Balance sheet,Group,2017,total non-current assets,total non-current assets,non_current_assets,7569.0,Balance Sheet
+Balance sheet,Group,2017,total non-current liabilities,total non-current liabilities,non_current_liabilities,11237.0,Balance Sheet
+Balance sheet,Group,2017,Trade and other payables,trade and other payables,payables,8227.0,Balance Sheet
+Balance sheet,Group,2017,Trade and other receivables,trade and other receivables,receivables,3976.0,Balance Sheet
+Balance sheet,Group,2018,Accumulated Loss,accumulated loss,accumulated_loss,-36883.0,Balance Sheet
+Balance sheet,Group,2018,Bank overdraft,bank overdraft,bank_overdraft,828.0,Balance Sheet
+Balance sheet,Group,2018,Cash and cash equivalents,cash and cash equivalents,cash,1635.0,Balance Sheet
+Balance sheet,Group,2018,Aircraft and other deposits,current assets: aircraft and other deposits,,400.0,Balance Sheet
+Balance sheet,Group,2018,Derivatives,current assets: derivatives,,2.0,Balance Sheet
+Balance sheet,Group,2018,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,3408.0,Balance Sheet
+Balance sheet,Group,2018,Provisions,current liabilities: provisions,provisions_current,1049.0,Balance Sheet
+Balance sheet,Group,2018,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,7662.0,Balance Sheet
+Balance sheet,Group,2018,Current tax receivable,current tax receivable,,40.0,Balance Sheet
+Balance sheet,Group,2018,Deferred tax asset,deferred tax asset,,12.0,Balance Sheet
+Balance sheet,Group,2018,Intangible assets,intangible assets,intangibles,213.0,Balance Sheet
+Balance sheet,Group,2018,Inventories,inventories,inventories,1042.0,Balance Sheet
+Balance sheet,Group,2018,Investments,investments,,35.0,Balance Sheet
+Balance sheet,Group,2018,Long–term loans,long-term loans,long_term_loans,786.0,Balance Sheet
+Balance sheet,Group,2018,"Non–current assets classified as held–for–sale
+and assets of disposal groups",non-current assets classified as held-for-sale and assets of disposal groups,,99.0,Balance Sheet
+Balance sheet,Group,2018,Aircraft and other deposits,non-current assets: aircraft and other deposits,,2261.0,Balance Sheet
+Balance sheet,Group,2018,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,568.0,Balance Sheet
+Balance sheet,Group,2018,Provisions,non-current liabilities: provisions,provisions_non_current,2707.0,Balance Sheet
+Balance sheet,Group,2018,Other long–term liabilities,other long-term liabilities,,206.0,Balance Sheet
+Balance sheet,Group,2018,"Property, aircraft and equipment","property, aircraft and equipment",ppe,4291.0,Balance Sheet
+Balance sheet,Group,2018,Reserves,reserves,reserves,953.0,Balance Sheet
+Balance sheet,Group,2018,Retirement benefit asset,retirement benefit asset,,22.0,Balance Sheet
+Balance sheet,Group,2018,Retirement benefit obligation,retirement benefit obligation,,113.0,Balance Sheet
+Balance sheet,Group,2018,Share capital,share capital,share_capital,12892.0,Balance Sheet
+Balance sheet,Group,2018,Shareholder contribution,shareholder contribution,shareholder_contribution,10000.0,Balance Sheet
+Balance sheet,Group,2018,Total assets,total assets,total_assets,13101.0,Balance Sheet
+Balance sheet,Group,2018,total current assets,total current assets,current_assets,6203.0,Balance Sheet
+Balance sheet,Group,2018,total current liabilities,total current liabilities,current_liabilities,21759.0,Balance Sheet
+Balance sheet,Group,2018,total equity,total equity,total_equity,-13038.0,Balance Sheet
+Balance sheet,Group,2018,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,13101.0,Balance Sheet
+Balance sheet,Group,2018,Total liabilities,total liabilities,total_liabilities,26139.0,Balance Sheet
+Balance sheet,Group,2018,total non-current assets,total non-current assets,non_current_assets,6799.0,Balance Sheet
+Balance sheet,Group,2018,total non-current liabilities,total non-current liabilities,non_current_liabilities,4380.0,Balance Sheet
+Balance sheet,Group,2018,Trade and other payables,trade and other payables,payables,8812.0,Balance Sheet
+Balance sheet,Group,2018,Trade and other receivables,trade and other receivables,receivables,3049.0,Balance Sheet
+Balance sheet,Group,2019,Accumulated Loss,accumulated loss,accumulated_loss,-43366.0,Balance Sheet
+Balance sheet,Group,2019,Cash and cash equivalents,cash and cash equivalents,cash,1979.0,Balance Sheet
+Balance sheet,Group,2019,Aircraft and other deposits,current assets: aircraft and other deposits,,544.0,Balance Sheet
+Balance sheet,Group,2019,Deferred revenue on ticket sales,current liabilities: deferred revenue on ticket sales,deferred_revenue_current,4146.0,Balance Sheet
+Balance sheet,Group,2019,Provisions,current liabilities: provisions,provisions_current,1307.0,Balance Sheet
+Balance sheet,Group,2019,Current portion of long–term loans,current portion of long-term loans,current_portion_loans,11903.0,Balance Sheet
+Balance sheet,Group,2019,Current tax receivable,current tax receivable,,74.0,Balance Sheet
+Balance sheet,Group,2019,Deferred tax asset,deferred tax asset,,50.0,Balance Sheet
+Balance sheet,Group,2019,Intangible assets,intangible assets,intangibles,194.0,Balance Sheet
+Balance sheet,Group,2019,Inventories,inventories,inventories,992.0,Balance Sheet
+Balance sheet,Group,2019,Investments,investments,,35.0,Balance Sheet
+Balance sheet,Group,2019,Long–term loans,long-term loans,long_term_loans,6.0,Balance Sheet
+Balance sheet,Group,2019,Aircraft and other deposits,non-current assets: aircraft and other deposits,,3228.0,Balance Sheet
+Balance sheet,Group,2019,Deferred revenue on ticket sales,non-current liabilities: deferred revenue on ticket sales,deferred_revenue_non_current,469.0,Balance Sheet
+Balance sheet,Group,2019,Provisions,non-current liabilities: provisions,provisions_non_current,1466.0,Balance Sheet
+Balance sheet,Group,2019,Other long–term liabilities,other long-term liabilities,,810.0,Balance Sheet
+Balance sheet,Group,2019,"Property, aircraft and equipment","property, aircraft and equipment",ppe,3741.0,Balance Sheet
+Balance sheet,Group,2019,Reserves,reserves,reserves,954.0,Balance Sheet
+Balance sheet,Group,2019,Retirement benefit asset,retirement benefit asset,,11.0,Balance Sheet
+Balance sheet,Group,2019,Retirement benefit obligation,retirement benefit obligation,,117.0,Balance Sheet
+Balance sheet,Group,2019,Share capital,share capital,share_capital,12892.0,Balance Sheet
+Balance sheet,Group,2019,Shareholder contribution,shareholder contribution,shareholder_contribution,15000.0,Balance Sheet
+Balance sheet,Group,2019,Total assets,total assets,total_assets,13349.0,Balance Sheet
+Balance sheet,Group,2019,total current assets,total current assets,current_assets,6125.0,Balance Sheet
+Balance sheet,Group,2019,total current liabilities,total current liabilities,current_liabilities,25001.0,Balance Sheet
+Balance sheet,Group,2019,total equity,total equity,total_equity,-14520.0,Balance Sheet
+Balance sheet,Group,2019,Total equity and liabilities,total equity and liabilities,total_equity_and_liabilities,13349.0,Balance Sheet
+Balance sheet,Group,2019,Total liabilities,total liabilities,total_liabilities,27869.0,Balance Sheet
+Balance sheet,Group,2019,total non-current assets,total non-current assets,non_current_assets,7224.0,Balance Sheet
+Balance sheet,Group,2019,total non-current liabilities,total non-current liabilities,non_current_liabilities,2868.0,Balance Sheet
+Balance sheet,Group,2019,Trade and other payables,trade and other payables,payables,7645.0,Balance Sheet
+Balance sheet,Group,2019,Trade and other receivables,trade and other receivables,receivables,2501.0,Balance Sheet
+Cash flow,Company,2011,(Increase)/decrease in investments,(increase)/decrease in investments,,116.0,cash flow2011-2012
+Cash flow,Company,2011,Acquisition of shares in subsidiary,acquisition of shares in subsidiary,,-1800.0,cash flow2011-2012
+Cash flow,Company,2011,Additions to intangible assets,additions to intangible assets,intangible_additions,-43.0,cash flow2011-2012
+Cash flow,Company,2011,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,586.0,cash flow2011-2012
+Cash flow,Company,2011,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,226.0,cash flow2011-2012
+Cash flow,Company,2011,Cash and cash equivalents at end of the year,cash and cash equivalents at end of the year,closing_cash,1875.0,cash flow2011-2012
+Cash flow,Company,2011,Cash and cash equivalents at the beginning of the year,cash and cash equivalents at the beginning of the year,,3111.0,cash flow2011-2012
+Cash flow,Company,2011,Dividends paid,dividends paid,,-101.0,cash flow2011-2012
+Cash flow,Company,2011,External borrowings repaid,external borrowings repaid,borrowings_repaid,-804.0,cash flow2011-2012
+Cash flow,Company,2011,Finance costs,finance costs,finance_costs,200.0,cash flow2011-2012
+Cash flow,Company,2011,Foreign exchange effect on cash and cash equivalents,foreign exchange effect on cash and cash equivalents,,-23.0,cash flow2011-2012
+Cash flow,Company,2011,intangible assets,intangible assets,intangibles,39.0,cash flow2011-2012
+Cash flow,Company,2011,Interest income,interest income,interest_income,142.0,cash flow2011-2012
+Cash flow,Company,2011,Net cash (outflow)/inflow from operating activities,net cash (outflow)/inflow from operating activities,net_operating_cash,-14.0,cash flow2011-2012
+Cash flow,Company,2011,Net cash outflow from financing activities,net cash outflow from financing activities,net_financing_cash,-905.0,cash flow2011-2012
+Cash flow,Company,2011,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-294.0,cash flow2011-2012
+Cash flow,Company,2011,Net decrease in cash and cash equivalents,net decrease in cash and cash equivalents,,-1213.0,cash flow2011-2012
+Cash flow,Company,2011,R MILLION,r million,,2011.0,cash flow2011-2012
+Cash flow,Company,2011,Realised gains from derivative financial instruments,realised gains from derivative financial instruments,,-182.0,cash flow2011-2012
+Cash flow,Company,2011,Repayment of loans by subsidiaries,repayment of loans by subsidiaries,,1980.0,cash flow2011-2012
+Cash flow,Company,2012,(Increase)/decrease in investments,(increase)/decrease in investments,,-3.0,cash flow2011-2012
+Cash flow,Company,2012,Acquisition of shares in subsidiary,acquisition of shares in subsidiary,,-34.0,cash flow2011-2012
+Cash flow,Company,2012,Additions to intangible assets,additions to intangible assets,intangible_additions,-10.0,cash flow2011-2012
+Cash flow,Company,2012,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,674.0,cash flow2011-2012
+Cash flow,Company,2012,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-1119.0,cash flow2011-2012
+Cash flow,Company,2012,Cash and cash equivalents at end of the year,cash and cash equivalents at end of the year,closing_cash,-396.0,cash flow2011-2012
+Cash flow,Company,2012,Cash and cash equivalents at the beginning of the year,cash and cash equivalents at the beginning of the year,,1875.0,cash flow2011-2012
+Cash flow,Company,2012,Dividends paid,dividends paid,,-92.0,cash flow2011-2012
+Cash flow,Company,2012,External borrowings repaid,external borrowings repaid,borrowings_repaid,-656.0,cash flow2011-2012
+Cash flow,Company,2012,Finance costs,finance costs,finance_costs,172.0,cash flow2011-2012
+Cash flow,Company,2012,Foreign exchange effect on cash and cash equivalents,foreign exchange effect on cash and cash equivalents,,142.0,cash flow2011-2012
+Cash flow,Company,2012,intangible assets,intangible assets,intangibles,201.0,cash flow2011-2012
+Cash flow,Company,2012,Interest income,interest income,interest_income,42.0,cash flow2011-2012
+Cash flow,Company,2012,Net cash (outflow)/inflow from operating activities,net cash (outflow)/inflow from operating activities,net_operating_cash,-1153.0,cash flow2011-2012
+Cash flow,Company,2012,Net cash outflow from financing activities,net cash outflow from financing activities,net_financing_cash,-748.0,cash flow2011-2012
+Cash flow,Company,2012,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-512.0,cash flow2011-2012
+Cash flow,Company,2012,Net decrease in cash and cash equivalents,net decrease in cash and cash equivalents,,-2413.0,cash flow2011-2012
+Cash flow,Company,2012,R MILLION,r million,,2012.0,cash flow2011-2012
+Cash flow,Company,2012,Realised gains from derivative financial instruments,realised gains from derivative financial instruments,,96.0,cash flow2011-2012
+Cash flow,Company,2012,Repayment of loans by subsidiaries,repayment of loans by subsidiaries,,8.0,cash flow2011-2012
+Cash flow,Company,2015,Additions to intangible assets,additions to intangible assets,intangible_additions,-26.0,cash flow2015-2017
+Cash flow,Company,2015,"Additions to property, aircraft and
+equipment","additions to property, aircraft and equipment",capex,4250.0,cash flow2015-2017
+Cash flow,Company,2015,"Cash and cash equivalents at the
+beginning of the year",cash and cash equivalents at the beginning of the year,,564.0,cash flow2015-2017
+Cash flow,Company,2015,"Cash and cash equivalents at the end
+of the year",cash and cash equivalents at the end of the year,closing_cash,519.0,cash flow2015-2017
+Cash flow,Company,2015,"Cash generated from/(used in)
+operations",cash generated from/(used in) operations,cash_from_operations,-1731.0,cash flow2015-2017
+Cash flow,Company,2015,"Currency and jet fuel option premium
+spend",currency and jet fuel option premium spend,,-173.0,cash flow2015-2017
+Cash flow,Company,2015,External borrowings raised,external borrowings raised,borrowings_raised,4341.0,cash flow2015-2017
+Cash flow,Company,2015,External borrowings repaid,external borrowings repaid,borrowings_repaid,-438.0,cash flow2015-2017
+Cash flow,Company,2015,Finance costs,finance costs,finance_costs,667.0,cash flow2015-2017
+Cash flow,Company,2015,"Foreign exchange effect on cash and
+cash equivalents",foreign exchange effect on cash and cash equivalents,,50.0,cash flow2015-2017
+Cash flow,Company,2015,Interest income,interest income,interest_income,16.0,cash flow2015-2017
+Cash flow,Company,2015,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-140.0,cash flow2015-2017
+Cash flow,Company,2015,"Net cash inflow from financing
+activities",net cash inflow from financing activities,net_financing_cash,3763.0,cash flow2015-2017
+Cash flow,Company,2015,"Net cash outflow from investing
+activities",net cash outflow from investing activities,net_investing_cash,-1492.0,cash flow2015-2017
+Cash flow,Company,2015,"Net cash outflow from operating
+activities",net cash outflow from operating activities,net_operating_cash,-2366.0,cash flow2015-2017
+Cash flow,Company,2015,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,-95.0,cash flow2015-2017
+Cash flow,Company,2015,"Proceeds on disposal of property,
+aircraft, equipment and intangible
+assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,2784.0,cash flow2015-2017
+Cash flow,Company,2015,"Realised gains/(losses) from derivative
+financial instruments",realised gains/(losses) from derivative financial instruments,,205.0,cash flow2015-2017
+Cash flow,Company,2015,Tax paid,tax paid,tax_paid,16.0,cash flow2015-2017
+Cash flow,Company,2016,Additions to intangible assets,additions to intangible assets,intangible_additions,-1.0,cash flow2015-2017
+Cash flow,Company,2016,"Additions to property, aircraft and
+equipment","additions to property, aircraft and equipment",capex,658.0,cash flow2015-2017
+Cash flow,Company,2016,"Cash and cash equivalents at the
+beginning of the year",cash and cash equivalents at the beginning of the year,,519.0,cash flow2015-2017
+Cash flow,Company,2016,"Cash and cash equivalents at the end
+of the year",cash and cash equivalents at the end of the year,closing_cash,2044.0,cash flow2015-2017
+Cash flow,Company,2016,"Cash generated from/(used in)
+operations",cash generated from/(used in) operations,cash_from_operations,195.0,cash flow2015-2017
+Cash flow,Company,2016,"Currency and jet fuel option premium
+spend",currency and jet fuel option premium spend,,-158.0,cash flow2015-2017
+Cash flow,Company,2016,External borrowings raised,external borrowings raised,borrowings_raised,6000.0,cash flow2015-2017
+Cash flow,Company,2016,External borrowings repaid,external borrowings repaid,borrowings_repaid,-1560.0,cash flow2015-2017
+Cash flow,Company,2016,Finance costs,finance costs,finance_costs,1063.0,cash flow2015-2017
+Cash flow,Company,2016,"Foreign exchange effect on cash and
+cash equivalents",foreign exchange effect on cash and cash equivalents,,-66.0,cash flow2015-2017
+Cash flow,Company,2016,Interest income,interest income,interest_income,11.0,cash flow2015-2017
+Cash flow,Company,2016,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-1155.0,cash flow2015-2017
+Cash flow,Company,2016,"Net cash inflow from financing
+activities",net cash inflow from financing activities,net_financing_cash,3285.0,cash flow2015-2017
+Cash flow,Company,2016,"Net cash outflow from investing
+activities",net cash outflow from investing activities,net_investing_cash,-623.0,cash flow2015-2017
+Cash flow,Company,2016,"Net cash outflow from operating
+activities",net cash outflow from operating activities,net_operating_cash,-1071.0,cash flow2015-2017
+Cash flow,Company,2016,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,1591.0,cash flow2015-2017
+Cash flow,Company,2016,"Proceeds on disposal of property,
+aircraft, equipment and intangible
+assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,36.0,cash flow2015-2017
+Cash flow,Company,2016,"Realised gains/(losses) from derivative
+financial instruments",realised gains/(losses) from derivative financial instruments,,-40.0,cash flow2015-2017
+Cash flow,Company,2016,Tax paid,tax paid,tax_paid,16.0,cash flow2015-2017
+Cash flow,Company,2017,Additions to intangible assets,additions to intangible assets,intangible_additions,-39.0,cash flow
+Cash flow,Company,2017,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,885.0,cash flow
+Cash flow,Company,2017,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,195.0,cash flow
+Cash flow,Company,2017,the year,cash and cash equivalents at the beginning of the year,,1987.0,cash flow
+Cash flow,Company,2017,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,2212.0,cash flow
+Cash flow,Company,2017,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-136.0,cash flow
+Cash flow,Company,2017,External borrowings raised,external borrowings raised,borrowings_raised,2257.0,cash flow
+Cash flow,Company,2017,External borrowings repaid,external borrowings repaid,borrowings_repaid,-350.0,cash flow
+Cash flow,Company,2017,Finance costs,finance costs,finance_costs,1663.0,cash flow
+Cash flow,Company,2017,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,21.0,cash flow
+Cash flow,Company,2017,Interest and dividend income,interest and dividend income,,12.0,cash flow
+Cash flow,Company,2017,Interest income,interest income,interest_income,12.0,cash flow2015-2017
+Cash flow,Company,2017,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,663.0,cash flow
+Cash flow,Company,2017,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,204.0,cash flow
+Cash flow,Company,2017,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,2570.0,cash flow
+Cash flow,Company,2017,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-881.0,cash flow
+Cash flow,Company,2017,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-1485.0,cash flow
+Cash flow,Company,2017,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,419.0,cash flow2015-2017
+Cash flow,Company,2017,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,43.0,cash flow
+Cash flow,Company,2017,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,116.0,cash flow
+Cash flow,Company,2017,Tax paid,tax paid,tax_paid,9.0,cash flow
+Cash flow,Company,2018,Acquisition of shares in subsidiaries,acquisition of shares in subsidiaries,,-1418.0,cash flow
+Cash flow,Company,2018,Additions to intangible assets,additions to intangible assets,intangible_additions,-19.0,cash flow
+Cash flow,Company,2018,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,562.0,cash flow
+Cash flow,Company,2018,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-1317.0,cash flow
+Cash flow,Company,2018,the year,cash and cash equivalents at the beginning of the year,,2212.0,cash flow
+Cash flow,Company,2018,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,1325.0,cash flow
+Cash flow,Company,2018,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-22.0,cash flow
+Cash flow,Company,2018,External borrowings raised,external borrowings raised,borrowings_raised,1482.0,cash flow
+Cash flow,Company,2018,External borrowings repaid,external borrowings repaid,borrowings_repaid,-8946.0,cash flow
+Cash flow,Company,2018,Finance costs,finance costs,finance_costs,1473.0,cash flow
+Cash flow,Company,2018,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,-442.0,cash flow
+Cash flow,Company,2018,Interest and dividend income,interest and dividend income,,50.0,cash flow
+Cash flow,Company,2018,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,165.0,cash flow
+Cash flow,Company,2018,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,-445.0,cash flow
+Cash flow,Company,2018,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,2701.0,cash flow
+Cash flow,Company,2018,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-390.0,cash flow
+Cash flow,Company,2018,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-2756.0,cash flow
+Cash flow,Company,2018,"Proceeds from contribution made by the
+shareholder during the year",proceeds from contribution made by the shareholder during the year,shareholder_bailout,10000.0,cash flow
+Cash flow,Company,2018,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,231.0,cash flow
+Cash flow,Company,2018,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,20.0,cash flow
+Cash flow,Company,2018,Repayment of loans by subsidiaries,repayment of loans by subsidiaries,,1378.0,cash flow
+Cash flow,Company,2018,Tax paid,tax paid,tax_paid,14.0,cash flow
+Cash flow,Company,2019,Additions to intangible assets,additions to intangible assets,intangible_additions,-9.0,cash flow
+Cash flow,Company,2019,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,826.0,cash flow
+Cash flow,Company,2019,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-5563.0,cash flow
+Cash flow,Company,2019,the year,cash and cash equivalents at the beginning of the year,,1325.0,cash flow
+Cash flow,Company,2019,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,1775.0,cash flow
+Cash flow,Company,2019,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-26.0,cash flow
+Cash flow,Company,2019,External borrowings raised,external borrowings raised,borrowings_raised,8500.0,cash flow
+Cash flow,Company,2019,External borrowings repaid,external borrowings repaid,borrowings_repaid,-5000.0,cash flow
+Cash flow,Company,2019,Finance costs,finance costs,finance_costs,1399.0,cash flow
+Cash flow,Company,2019,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,89.0,cash flow
+Cash flow,Company,2019,Interest and dividend income,interest and dividend income,,62.0,cash flow
+Cash flow,Company,2019,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-828.0,cash flow
+Cash flow,Company,2019,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,361.0,cash flow
+Cash flow,Company,2019,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,7672.0,cash flow
+Cash flow,Company,2019,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-412.0,cash flow
+Cash flow,Company,2019,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-6899.0,cash flow
+Cash flow,Company,2019,"Proceeds from contribution made by the
+shareholder during the year",proceeds from contribution made by the shareholder during the year,shareholder_bailout,5000.0,cash flow
+Cash flow,Company,2019,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,423.0,cash flow
+Cash flow,Company,2019,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,31.0,cash flow
+Cash flow,Company,2019,Tax paid,tax paid,tax_paid,4.0,cash flow
+Cash flow,Group,2011,(Increase)/decrease in investments,(increase)/decrease in investments,,116.0,cash flow2011-2012
+Cash flow,Group,2011,Additions to intangible assets,additions to intangible assets,intangible_additions,-45.0,cash flow2011-2012
+Cash flow,Group,2011,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,631.0,cash flow2011-2012
+Cash flow,Group,2011,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,525.0,cash flow2011-2012
+Cash flow,Group,2011,Cash and cash equivalents at end of the year,cash and cash equivalents at end of the year,closing_cash,2252.0,cash flow2011-2012
+Cash flow,Group,2011,Cash and cash equivalents at the beginning of the year,cash and cash equivalents at the beginning of the year,,3402.0,cash flow2011-2012
+Cash flow,Group,2011,Dividends paid,dividends paid,,-101.0,cash flow2011-2012
+Cash flow,Group,2011,External borrowings repaid,external borrowings repaid,borrowings_repaid,-838.0,cash flow2011-2012
+Cash flow,Group,2011,Finance costs,finance costs,finance_costs,168.0,cash flow2011-2012
+Cash flow,Group,2011,Foreign exchange effect on cash and cash equivalents,foreign exchange effect on cash and cash equivalents,,-23.0,cash flow2011-2012
+Cash flow,Group,2011,intangible assets,intangible assets,intangibles,41.0,cash flow2011-2012
+Cash flow,Group,2011,Interest income,interest income,interest_income,156.0,cash flow2011-2012
+Cash flow,Group,2011,Net cash (outflow)/inflow from operating activities,net cash (outflow)/inflow from operating activities,net_operating_cash,331.0,cash flow2011-2012
+Cash flow,Group,2011,Net cash outflow from financing activities,net cash outflow from financing activities,net_financing_cash,-939.0,cash flow2011-2012
+Cash flow,Group,2011,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-519.0,cash flow2011-2012
+Cash flow,Group,2011,Net decrease in cash and cash equivalents,net decrease in cash and cash equivalents,,-1127.0,cash flow2011-2012
+Cash flow,Group,2011,R MILLION,r million,,2011.0,cash flow2011-2012
+Cash flow,Group,2011,Realised gains from derivative financial instruments,realised gains from derivative financial instruments,,-182.0,cash flow2011-2012
+Cash flow,Group,2012,(Increase)/decrease in investments,(increase)/decrease in investments,,-3.0,cash flow2011-2012
+Cash flow,Group,2012,Additions to intangible assets,additions to intangible assets,intangible_additions,-16.0,cash flow2011-2012
+Cash flow,Group,2012,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,741.0,cash flow2011-2012
+Cash flow,Group,2012,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-1126.0,cash flow2011-2012
+Cash flow,Group,2012,Cash and cash equivalents at end of the year,cash and cash equivalents at end of the year,closing_cash,-33.0,cash flow2011-2012
+Cash flow,Group,2012,Cash and cash equivalents at the beginning of the year,cash and cash equivalents at the beginning of the year,,2252.0,cash flow2011-2012
+Cash flow,Group,2012,Dividends paid,dividends paid,,-92.0,cash flow2011-2012
+Cash flow,Group,2012,External borrowings repaid,external borrowings repaid,borrowings_repaid,-644.0,cash flow2011-2012
+Cash flow,Group,2012,Finance costs,finance costs,finance_costs,147.0,cash flow2011-2012
+Cash flow,Group,2012,Foreign exchange effect on cash and cash equivalents,foreign exchange effect on cash and cash equivalents,,141.0,cash flow2011-2012
+Cash flow,Group,2012,intangible assets,intangible assets,intangibles,205.0,cash flow2011-2012
+Cash flow,Group,2012,Interest income,interest income,interest_income,42.0,cash flow2011-2012
+Cash flow,Group,2012,Net cash (outflow)/inflow from operating activities,net cash (outflow)/inflow from operating activities,net_operating_cash,-1135.0,cash flow2011-2012
+Cash flow,Group,2012,Net cash outflow from financing activities,net cash outflow from financing activities,net_financing_cash,-736.0,cash flow2011-2012
+Cash flow,Group,2012,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-555.0,cash flow2011-2012
+Cash flow,Group,2012,Net decrease in cash and cash equivalents,net decrease in cash and cash equivalents,,-2426.0,cash flow2011-2012
+Cash flow,Group,2012,R MILLION,r million,,2012.0,cash flow2011-2012
+Cash flow,Group,2012,Realised gains from derivative financial instruments,realised gains from derivative financial instruments,,96.0,cash flow2011-2012
+Cash flow,Group,2015,Additions to intangible assets,additions to intangible assets,intangible_additions,-32.0,cash flow2015-2017
+Cash flow,Group,2015,"Additions to property, aircraft and
+equipment","additions to property, aircraft and equipment",capex,4341.0,cash flow2015-2017
+Cash flow,Group,2015,"Cash and cash equivalents at the
+beginning of the year",cash and cash equivalents at the beginning of the year,,1267.0,cash flow2015-2017
+Cash flow,Group,2015,"Cash and cash equivalents at the end
+of the year",cash and cash equivalents at the end of the year,closing_cash,1295.0,cash flow2015-2017
+Cash flow,Group,2015,"Cash generated from/(used in)
+operations",cash generated from/(used in) operations,cash_from_operations,-1593.0,cash flow2015-2017
+Cash flow,Group,2015,"Currency and jet fuel option premium
+spend",currency and jet fuel option premium spend,,-173.0,cash flow2015-2017
+Cash flow,Group,2015,External borrowings raised,external borrowings raised,borrowings_raised,4342.0,cash flow2015-2017
+Cash flow,Group,2015,External borrowings repaid,external borrowings repaid,borrowings_repaid,-442.0,cash flow2015-2017
+Cash flow,Group,2015,Finance costs,finance costs,finance_costs,634.0,cash flow2015-2017
+Cash flow,Group,2015,"Foreign exchange effect on cash and
+cash equivalents",foreign exchange effect on cash and cash equivalents,,49.0,cash flow2015-2017
+Cash flow,Group,2015,Interest income,interest income,interest_income,26.0,cash flow2015-2017
+Cash flow,Group,2015,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-120.0,cash flow2015-2017
+Cash flow,Group,2015,"Net cash inflow from financing
+activities",net cash inflow from financing activities,net_financing_cash,3780.0,cash flow2015-2017
+Cash flow,Group,2015,"Net cash outflow from investing
+activities",net cash outflow from investing activities,net_investing_cash,-1592.0,cash flow2015-2017
+Cash flow,Group,2015,"Net cash outflow from operating
+activities",net cash outflow from operating activities,net_operating_cash,-2209.0,cash flow2015-2017
+Cash flow,Group,2015,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,-21.0,cash flow2015-2017
+Cash flow,Group,2015,"Proceeds on disposal of property,
+aircraft, equipment and intangible
+assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,2781.0,cash flow2015-2017
+Cash flow,Group,2015,"Realised gains/(losses) from derivative
+financial instruments",realised gains/(losses) from derivative financial instruments,,205.0,cash flow2015-2017
+Cash flow,Group,2015,Tax paid,tax paid,tax_paid,40.0,cash flow2015-2017
+Cash flow,Group,2016,Additions to intangible assets,additions to intangible assets,intangible_additions,-13.0,cash flow2015-2017
+Cash flow,Group,2016,"Additions to property, aircraft and
+equipment","additions to property, aircraft and equipment",capex,714.0,cash flow2015-2017
+Cash flow,Group,2016,"Cash and cash equivalents at the
+beginning of the year",cash and cash equivalents at the beginning of the year,,1295.0,cash flow2015-2017
+Cash flow,Group,2016,"Cash and cash equivalents at the end
+of the year",cash and cash equivalents at the end of the year,closing_cash,2701.0,cash flow2015-2017
+Cash flow,Group,2016,"Cash generated from/(used in)
+operations",cash generated from/(used in) operations,cash_from_operations,117.0,cash flow2015-2017
+Cash flow,Group,2016,"Currency and jet fuel option premium
+spend",currency and jet fuel option premium spend,,-158.0,cash flow2015-2017
+Cash flow,Group,2016,External borrowings raised,external borrowings raised,borrowings_raised,6000.0,cash flow2015-2017
+Cash flow,Group,2016,External borrowings repaid,external borrowings repaid,borrowings_repaid,-1564.0,cash flow2015-2017
+Cash flow,Group,2016,Finance costs,finance costs,finance_costs,1030.0,cash flow2015-2017
+Cash flow,Group,2016,"Foreign exchange effect on cash and
+cash equivalents",foreign exchange effect on cash and cash equivalents,,-64.0,cash flow2015-2017
+Cash flow,Group,2016,Interest income,interest income,interest_income,26.0,cash flow2015-2017
+Cash flow,Group,2016,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-1162.0,cash flow2015-2017
+Cash flow,Group,2016,"Net cash inflow from financing
+activities",net cash inflow from financing activities,net_financing_cash,3274.0,cash flow2015-2017
+Cash flow,Group,2016,"Net cash outflow from investing
+activities",net cash outflow from investing activities,net_investing_cash,-683.0,cash flow2015-2017
+Cash flow,Group,2016,"Net cash outflow from operating
+activities",net cash outflow from operating activities,net_operating_cash,-1121.0,cash flow2015-2017
+Cash flow,Group,2016,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,1470.0,cash flow2015-2017
+Cash flow,Group,2016,"Proceeds on disposal of property,
+aircraft, equipment and intangible
+assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,44.0,cash flow2015-2017
+Cash flow,Group,2016,"Realised gains/(losses) from derivative
+financial instruments",realised gains/(losses) from derivative financial instruments,,-40.0,cash flow2015-2017
+Cash flow,Group,2016,Tax paid,tax paid,tax_paid,36.0,cash flow2015-2017
+Cash flow,Group,2017,Additions to intangible assets,additions to intangible assets,intangible_additions,-44.0,cash flow
+Cash flow,Group,2017,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,997.0,cash flow
+Cash flow,Group,2017,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-13.0,cash flow
+Cash flow,Group,2017,the year,cash and cash equivalents at the beginning of the year,,2644.0,cash flow
+Cash flow,Group,2017,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,2600.0,cash flow
+Cash flow,Group,2017,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-136.0,cash flow
+Cash flow,Group,2017,External borrowings raised,external borrowings raised,borrowings_raised,2257.0,cash flow
+Cash flow,Group,2017,External borrowings repaid,external borrowings repaid,borrowings_repaid,-353.0,cash flow
+Cash flow,Group,2017,Finance costs,finance costs,finance_costs,1630.0,cash flow
+Cash flow,Group,2017,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,19.0,cash flow
+Cash flow,Group,2017,Interest and dividend income,interest and dividend income,,40.0,cash flow
+Cash flow,Group,2017,Interest income,interest income,interest_income,40.0,cash flow2015-2017
+Cash flow,Group,2017,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,661.0,cash flow
+Cash flow,Group,2017,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,-63.0,cash flow
+Cash flow,Group,2017,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,2565.0,cash flow
+Cash flow,Group,2017,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-996.0,cash flow
+Cash flow,Group,2017,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-1632.0,cash flow
+Cash flow,Group,2017,"Net increase/(decrease) in cash and
+cash equivalents",net increase/(decrease) in cash and cash equivalents,,152.0,cash flow2015-2017
+Cash flow,Group,2017,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,45.0,cash flow
+Cash flow,Group,2017,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,116.0,cash flow
+Cash flow,Group,2017,Tax paid,tax paid,tax_paid,9.0,cash flow
+Cash flow,Group,2018,Additions to intangible assets,additions to intangible assets,intangible_additions,-21.0,cash flow
+Cash flow,Group,2018,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,626.0,cash flow
+Cash flow,Group,2018,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-1112.0,cash flow
+Cash flow,Group,2018,the year,cash and cash equivalents at the beginning of the year,,2600.0,cash flow
+Cash flow,Group,2018,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,1635.0,cash flow
+Cash flow,Group,2018,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-22.0,cash flow
+Cash flow,Group,2018,External borrowings raised,external borrowings raised,borrowings_raised,104.0,cash flow
+Cash flow,Group,2018,External borrowings repaid,external borrowings repaid,borrowings_repaid,-7575.0,cash flow
+Cash flow,Group,2018,Finance costs,finance costs,finance_costs,1472.0,cash flow
+Cash flow,Group,2018,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,-442.0,cash flow
+Cash flow,Group,2018,Interest and dividend income,interest and dividend income,,87.0,cash flow
+Cash flow,Group,2018,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,144.0,cash flow
+Cash flow,Group,2018,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,-523.0,cash flow
+Cash flow,Group,2018,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,2673.0,cash flow
+Cash flow,Group,2018,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-639.0,cash flow
+Cash flow,Group,2018,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-2557.0,cash flow
+Cash flow,Group,2018,"Proceeds from contribution made by the
+shareholder during the year",proceeds from contribution made by the shareholder during the year,shareholder_bailout,10000.0,cash flow
+Cash flow,Group,2018,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,8.0,cash flow
+Cash flow,Group,2018,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,20.0,cash flow
+Cash flow,Group,2018,Tax paid,tax paid,tax_paid,58.0,cash flow
+Cash flow,Group,2019,Additions to intangible assets,additions to intangible assets,intangible_additions,-27.0,cash flow
+Cash flow,Group,2019,"Additions to property, aircraft and equipment","additions to property, aircraft and equipment",capex,864.0,cash flow
+Cash flow,Group,2019,Cash (used in)/generated from operations,cash (used in)/generated from operations,cash_from_operations,-5544.0,cash flow
+Cash flow,Group,2019,the year,cash and cash equivalents at the beginning of the year,,1635.0,cash flow
+Cash flow,Group,2019,"Cash and cash equivalents at the end of the
+year",cash and cash equivalents at the end of the year,closing_cash,1979.0,cash flow
+Cash flow,Group,2019,Currency and jet fuel option premium spend,currency and jet fuel option premium spend,,-26.0,cash flow
+Cash flow,Group,2019,External borrowings raised,external borrowings raised,borrowings_raised,8507.0,cash flow
+Cash flow,Group,2019,External borrowings repaid,external borrowings repaid,borrowings_repaid,-5003.0,cash flow
+Cash flow,Group,2019,Finance costs,finance costs,finance_costs,1432.0,cash flow
+Cash flow,Group,2019,"Foreign exchange effect on cash and cash
+equivalents",foreign exchange effect on cash and cash equivalents,,86.0,cash flow
+Cash flow,Group,2019,Interest and dividend income,interest and dividend income,,54.0,cash flow
+Cash flow,Group,2019,Movement in bank overdraft,movement in bank overdraft,overdraft_movement,-828.0,cash flow
+Cash flow,Group,2019,"Net (decrease)/increase in cash and cash
+equivalents",net (decrease)/increase in cash and cash equivalents,,258.0,cash flow
+Cash flow,Group,2019,Net cash inflow from financing activities,net cash inflow from financing activities,net_financing_cash,7676.0,cash flow
+Cash flow,Group,2019,Net cash outflow from investing activities,net cash outflow from investing activities,net_investing_cash,-470.0,cash flow
+Cash flow,Group,2019,Net cash outflow from operating activities,net cash outflow from operating activities,net_operating_cash,-6948.0,cash flow
+Cash flow,Group,2019,"Proceeds from contribution made by the
+shareholder during the year",proceeds from contribution made by the shareholder during the year,shareholder_bailout,5000.0,cash flow
+Cash flow,Group,2019,"Proceeds on disposal of property, aircraft,
+equipment and intangible assets","proceeds on disposal of property, aircraft, equipment and intangible assets",,421.0,cash flow
+Cash flow,Group,2019,"Realised gains/(losses) from derivative financial
+instruments",realised gains/(losses) from derivative financial instruments,,31.0,cash flow
+Cash flow,Group,2019,Tax paid,tax paid,tax_paid,31.0,cash flow
+Income statement,Company,2011,(Loss)/profit before finance costs and investment income,(loss)/profit before finance costs and investment income,operating_loss,786.0,income state 2011-2012
+Income statement,Company,2011,(Loss)/profit before taxation,(loss)/profit before taxation,loss_before_tax,728.0,income state 2011-2012
+Income statement,Company,2011,(Loss)/profit for the year,(loss)/profit for the year,loss_for_year,715.0,income state 2011-2012
+Income statement,Company,2011,Accommodation and refreshments,accommodation and refreshments,catering_costs,970.0,income state 2011-2012
+Income statement,Company,2011,Actuarial gains and losses on defined benefit plans,actuarial gains and losses on defined benefit plans,,-45.0,income state 2011-2012
+Income statement,Company,2011,Aircraft lease costs,aircraft lease costs,lease_costs,1686.0,income state 2011-2012
+Income statement,Company,2011,Depreciation and amortisation,depreciation and amortisation,depreciation,791.0,income state 2011-2012
+Income statement,Company,2011,Distribution costs,distribution costs,commission_costs,1182.0,income state 2011-2012
+Income statement,Company,2011,Electronic data costs,electronic data costs,,489.0,income state 2011-2012
+Income statement,Company,2011,Employee benefit expenses,employee benefit expenses,employee_costs,2972.0,income state 2011-2012
+Income statement,Company,2011,Energy,energy,fuel_costs,5814.0,income state 2011-2012
+Income statement,Company,2011,Fair value movements and translation profit/(loss),fair value movements and translation profit/(loss),,-171.0,income state 2011-2012
+Income statement,Company,2011,Finance costs,finance costs,finance_costs,200.0,income state 2011-2012
+Income statement,Company,2011,"Gains on disposal of property, aircraft and equipment","gains on disposal of property, aircraft and equipment",,-10.0,income state 2011-2012
+Income statement,Company,2011,Investment income,investment income,interest_income,142.0,income state 2011-2012
+Income statement,Company,2011,Material,material,maintenance_costs,2521.0,income state 2011-2012
+Income statement,Company,2011,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1173.0,income state 2011-2012
+Income statement,Company,2011,Net impairment write-off,net impairment write-off,impairments,13.0,income state 2011-2012
+Income statement,Company,2011,translation profit/(loss),operating (loss)/profit before fair value movements and translation profit/(loss),ebitda,957.0,income state 2011-2012
+Income statement,Company,2011,Operating costs,operating costs,operating_costs,20652.0,income state 2011-2012
+Income statement,Company,2011,Other comprehensive income/(loss) for the year net of taxation,other comprehensive income/(loss) for the year net of taxation,,-32.0,income state 2011-2012
+Income statement,Company,2011,Other income,other income,other_income,4863.0,income state 2011-2012
+Income statement,Company,2011,Other operating costs,other operating costs,other_operating_costs,3051.0,income state 2011-2012
+Income statement,Company,2011,Owners of the parent,owners of the parent,,582.0,income state 2011-2012
+Income statement,Company,2011,Revenue,revenue,total_income,21609.0,income state 2011-2012
+Income statement,Company,2011,Subordinated loan provider,subordinated loan provider,,101.0,income state 2011-2012
+Income statement,Company,2011,Taxation,taxation,taxation,-13.0,income state 2011-2012
+Income statement,Company,2011,Taxation related to components of other comprehensive income,taxation related to components of other comprehensive income,,13.0,income state 2011-2012
+Income statement,Company,2011,Total comprehensive income/(loss),total comprehensive income/(loss),total_comprehensive_loss,683.0,income state 2011-2012
+Income statement,Company,2011,Turnover,turnover,airline_revenue,16746.0,income state 2011-2012
+Income statement,Company,2012,(Loss)/profit before finance costs and investment income,(loss)/profit before finance costs and investment income,operating_loss,-937.0,income state 2011-2012
+Income statement,Company,2012,(Loss)/profit before taxation,(loss)/profit before taxation,loss_before_tax,-1067.0,income state 2011-2012
+Income statement,Company,2012,(Loss)/profit for the year,(loss)/profit for the year,loss_for_year,-1067.0,income state 2011-2012
+Income statement,Company,2012,Accommodation and refreshments,accommodation and refreshments,catering_costs,1114.0,income state 2011-2012
+Income statement,Company,2012,Actuarial gains and losses on defined benefit plans,actuarial gains and losses on defined benefit plans,,80.0,income state 2011-2012
+Income statement,Company,2012,Aircraft lease costs,aircraft lease costs,lease_costs,1795.0,income state 2011-2012
+Income statement,Company,2012,Depreciation and amortisation,depreciation and amortisation,depreciation,474.0,income state 2011-2012
+Income statement,Company,2012,Distribution costs,distribution costs,commission_costs,1178.0,income state 2011-2012
+Income statement,Company,2012,Electronic data costs,electronic data costs,,553.0,income state 2011-2012
+Income statement,Company,2012,Employee benefit expenses,employee benefit expenses,employee_costs,3129.0,income state 2011-2012
+Income statement,Company,2012,Energy,energy,fuel_costs,7882.0,income state 2011-2012
+Income statement,Company,2012,Fair value movements and translation profit/(loss),fair value movements and translation profit/(loss),,62.0,income state 2011-2012
+Income statement,Company,2012,Finance costs,finance costs,finance_costs,172.0,income state 2011-2012
+Income statement,Company,2012,Gains and losses on property revaluations,gains and losses on property revaluations,,433.0,income state 2011-2012
+Income statement,Company,2012,"Gains on disposal of property, aircraft and equipment","gains on disposal of property, aircraft and equipment",,-25.0,income state 2011-2012
+Income statement,Company,2012,Investment income,investment income,interest_income,42.0,income state 2011-2012
+Income statement,Company,2012,Material,material,maintenance_costs,2735.0,income state 2011-2012
+Income statement,Company,2012,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1368.0,income state 2011-2012
+Income statement,Company,2012,Net impairment write-off,net impairment write-off,impairments,-228.0,income state 2011-2012
+Income statement,Company,2012,translation profit/(loss),operating (loss)/profit before fair value movements and translation profit/(loss),ebitda,-999.0,income state 2011-2012
+Income statement,Company,2012,Operating costs,operating costs,operating_costs,23444.0,income state 2011-2012
+Income statement,Company,2012,Other comprehensive income/(loss) for the year net of taxation,other comprehensive income/(loss) for the year net of taxation,,513.0,income state 2011-2012
+Income statement,Company,2012,Other income,other income,other_income,5414.0,income state 2011-2012
+Income statement,Company,2012,Other operating costs,other operating costs,other_operating_costs,3469.0,income state 2011-2012
+Income statement,Company,2012,Owners of the parent,owners of the parent,,-646.0,income state 2011-2012
+Income statement,Company,2012,Revenue,revenue,total_income,22445.0,income state 2011-2012
+Income statement,Company,2012,Subordinated loan provider,subordinated loan provider,,92.0,income state 2011-2012
+Income statement,Company,2012,Total comprehensive income/(loss),total comprehensive income/(loss),total_comprehensive_loss,-554.0,income state 2011-2012
+Income statement,Company,2012,Turnover,turnover,airline_revenue,17031.0,income state 2011-2012
+Income statement,Company,2015,Accommodation and refreshments,accommodation and refreshments,catering_costs,1416.0,Income statement 2015-2017
+Income statement,Company,2015,Aircraft lease costs,aircraft lease costs,lease_costs,2711.0,Income statement 2015-2017
+Income statement,Company,2015,Airline revenue,airline revenue,airline_revenue,26775.0,Income statement 2015-2017
+Income statement,Company,2015,"Change in value of available-for-sale
+financial asset**",change in value of available-for-sale financial asset,,3.0,Income statement 2015-2017
+Income statement,Company,2015,Commissions and network charges,commissions and network charges,commission_costs,1763.0,Income statement 2015-2017
+Income statement,Company,2015,Depreciation and amortisation,depreciation and amortisation,depreciation,754.0,Income statement 2015-2017
+Income statement,Company,2015,Electronic data costs,electronic data costs,,530.0,Income statement 2015-2017
+Income statement,Company,2015,Employee benefit expenses,employee benefit expenses,employee_costs,3758.0,Income statement 2015-2017
+Income statement,Company,2015,Fair value and translation movements,fair value and translation movements,,22.0,Income statement 2015-2017
+Income statement,Company,2015,Finance costs,finance costs,finance_costs,667.0,Income statement 2015-2017
+Income statement,Company,2015,Fuel and other energy costs,fuel and other energy costs,fuel_costs,9449.0,Income statement 2015-2017
+Income statement,Company,2015,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,-47.0,Income statement 2015-2017
+Income statement,Company,2015,Impairments,impairments,impairments,-1514.0,Income statement 2015-2017
+Income statement,Company,2015,Interest income,interest income,interest_income,16.0,Income statement 2015-2017
+Income statement,Company,2015,Loss before taxation,loss before taxation,loss_before_tax,-5718.0,Income statement 2015-2017
+Income statement,Company,2015,Loss for the year,loss for the year,loss_for_year,-5718.0,Income statement 2015-2017
+Income statement,Company,2015,Maintenance costs,maintenance costs,maintenance_costs,4866.0,Income statement 2015-2017
+Income statement,Company,2015,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1980.0,Income statement 2015-2017
+Income statement,Company,2015,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,-3.0,Income statement 2015-2017
+Income statement,Company,2015,"Operating (loss)/profit before interest,
+tax, depreciation and amortisation","operating (loss)/profit before interest, tax, depreciation and amortisation",ebitda,-2796.0,Income statement 2015-2017
+Income statement,Company,2015,Operating costs,operating costs,operating_costs,31015.0,Income statement 2015-2017
+Income statement,Company,2015,Operating loss,operating loss,operating_loss,-5067.0,Income statement 2015-2017
+Income statement,Company,2015,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,-50.0,Income statement 2015-2017
+Income statement,Company,2015,Other income,other income,other_income,1444.0,Income statement 2015-2017
+Income statement,Company,2015,Other operating costs,other operating costs,other_operating_costs,4520.0,Income statement 2015-2017
+Income statement,Company,2015,Owners of the parent,owners of the parent,,-5768.0,Income statement 2015-2017
+Income statement,Company,2015,"Remeasurements of defined benefit
+plans*",remeasurements of defined benefit plans,,-6.0,Income statement 2015-2017
+Income statement,Company,2015,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-5768.0,Income statement 2015-2017
+Income statement,Company,2015,Total income,total income,total_income,28219.0,Income statement 2015-2017
+Income statement,Company,2016,Accommodation and refreshments,accommodation and refreshments,catering_costs,1566.0,Income statement 2015-2017
+Income statement,Company,2016,Aircraft lease costs,aircraft lease costs,lease_costs,3078.0,Income statement 2015-2017
+Income statement,Company,2016,Airline revenue,airline revenue,airline_revenue,26755.0,Income statement 2015-2017
+Income statement,Company,2016,"Change in value of available-for-sale
+financial asset**",change in value of available-for-sale financial asset,,5.0,Income statement 2015-2017
+Income statement,Company,2016,Commissions and network charges,commissions and network charges,commission_costs,1730.0,Income statement 2015-2017
+Income statement,Company,2016,Depreciation and amortisation,depreciation and amortisation,depreciation,656.0,Income statement 2015-2017
+Income statement,Company,2016,Electronic data costs,electronic data costs,,636.0,Income statement 2015-2017
+Income statement,Company,2016,Employee benefit expenses,employee benefit expenses,employee_costs,3819.0,Income statement 2015-2017
+Income statement,Company,2016,Fair value and translation movements,fair value and translation movements,,-834.0,Income statement 2015-2017
+Income statement,Company,2016,Finance costs,finance costs,finance_costs,1063.0,Income statement 2015-2017
+Income statement,Company,2016,Fuel and other energy costs,fuel and other energy costs,fuel_costs,6673.0,Income statement 2015-2017
+Income statement,Company,2016,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,-18.0,Income statement 2015-2017
+Income statement,Company,2016,Impairments,impairments,impairments,-98.0,Income statement 2015-2017
+Income statement,Company,2016,Interest income,interest income,interest_income,11.0,Income statement 2015-2017
+Income statement,Company,2016,Loss before taxation,loss before taxation,loss_before_tax,-1314.0,Income statement 2015-2017
+Income statement,Company,2016,Loss for the year,loss for the year,loss_for_year,-1314.0,Income statement 2015-2017
+Income statement,Company,2016,Maintenance costs,maintenance costs,maintenance_costs,5368.0,Income statement 2015-2017
+Income statement,Company,2016,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2108.0,Income statement 2015-2017
+Income statement,Company,2016,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,-2.0,Income statement 2015-2017
+Income statement,Company,2016,"Operating (loss)/profit before interest,
+tax, depreciation and amortisation","operating (loss)/profit before interest, tax, depreciation and amortisation",ebitda,494.0,Income statement 2015-2017
+Income statement,Company,2016,Operating costs,operating costs,operating_costs,27889.0,Income statement 2015-2017
+Income statement,Company,2016,Operating loss,operating loss,operating_loss,-262.0,Income statement 2015-2017
+Income statement,Company,2016,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,-19.0,Income statement 2015-2017
+Income statement,Company,2016,Other income,other income,other_income,1628.0,Income statement 2015-2017
+Income statement,Company,2016,Other operating costs,other operating costs,other_operating_costs,3745.0,Income statement 2015-2017
+Income statement,Company,2016,Owners of the parent,owners of the parent,,-1333.0,Income statement 2015-2017
+Income statement,Company,2016,"Remeasurements of defined benefit
+plans*",remeasurements of defined benefit plans,,-6.0,Income statement 2015-2017
+Income statement,Company,2016,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-1333.0,Income statement 2015-2017
+Income statement,Company,2016,Total income,total income,total_income,28383.0,Income statement 2015-2017
+Income statement,Company,2017,Accommodation and refreshments,accommodation and refreshments,catering_costs,1711.0,Income statement
+Income statement,Company,2017,Aircraft lease costs,aircraft lease costs,lease_costs,3022.0,Income statement
+Income statement,Company,2017,Airline revenue,airline revenue,airline_revenue,26539.0,Income statement
+Income statement,Company,2017,"Change in value of available–for–sale financial
+asset**",change in value of available-for-sale financial asset,,6.0,Income statement
+Income statement,Company,2017,Commissions and network charges,commissions and network charges,commission_costs,1798.0,Income statement
+Income statement,Company,2017,Depreciation and amortisation,depreciation and amortisation,depreciation,953.0,Income statement
+Income statement,Company,2017,Electronic data costs,electronic data costs,,666.0,Income statement
+Income statement,Company,2017,Employee benefit expenses,employee benefit expenses,employee_costs,4012.0,Income statement
+Income statement,Company,2017,Fair value and translation movements,fair value and translation movements,,1081.0,Income statement
+Income statement,Company,2017,Finance costs,finance costs,finance_costs,1663.0,Income statement
+Income statement,Company,2017,Fuel and other energy costs,fuel and other energy costs,fuel_costs,6735.0,Income statement
+Income statement,Company,2017,Gains on property revaluations*,gains on property revaluations,,67.0,Income statement
+Income statement,Company,2017,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,67.0,Income statement 2015-2017
+Income statement,Company,2017,Impairments,impairments,impairments,-906.0,Income statement
+Income statement,Company,2017,Interest income,interest income,interest_income,12.0,Income statement
+Income statement,Company,2017,Loss before taxation,loss before taxation,loss_before_tax,-6337.0,Income statement
+Income statement,Company,2017,Loss for the year,loss for the year,loss_for_year,-6337.0,Income statement
+Income statement,Company,2017,Maintenance costs,maintenance costs,maintenance_costs,6181.0,Income statement
+Income statement,Company,2017,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2161.0,Income statement
+Income statement,Company,2017,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,18.0,Income statement
+Income statement,Company,2017,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,18.0,Income statement 2015-2017
+Income statement,Company,2017,Operating costs,operating costs,operating_costs,31244.0,Income statement
+Income statement,Company,2017,Operating loss,operating loss,operating_loss,-4686.0,Income statement
+Income statement,Company,2017,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-2845.0,Income statement
+Income statement,Company,2017,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,62.0,Income statement
+Income statement,Company,2017,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,62.0,Income statement 2015-2017
+Income statement,Company,2017,Other income,other income,other_income,1860.0,Income statement
+Income statement,Company,2017,Other operating costs,other operating costs,other_operating_costs,3877.0,Income statement
+Income statement,Company,2017,Owners of the parent,owners of the parent,,-6275.0,Income statement
+Income statement,Company,2017,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,-11.0,Income statement
+Income statement,Company,2017,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-6275.0,Income statement
+Income statement,Company,2017,Total income,total income,total_income,28399.0,Income statement
+Income statement,Company,2018,Accommodation and refreshments,accommodation and refreshments,catering_costs,1506.0,Income statement
+Income statement,Company,2018,Aircraft lease costs,aircraft lease costs,lease_costs,3158.0,Income statement
+Income statement,Company,2018,Airline revenue,airline revenue,airline_revenue,25192.0,Income statement
+Income statement,Company,2018,"Change in value of available–for–sale financial
+asset**",change in value of available-for-sale financial asset,,6.0,Income statement
+Income statement,Company,2018,Commissions and network charges,commissions and network charges,commission_costs,1685.0,Income statement
+Income statement,Company,2018,Depreciation and amortisation,depreciation and amortisation,depreciation,692.0,Income statement
+Income statement,Company,2018,Electronic data costs,electronic data costs,,631.0,Income statement
+Income statement,Company,2018,Employee benefit expenses,employee benefit expenses,employee_costs,4025.0,Income statement
+Income statement,Company,2018,Fair value and translation movements,fair value and translation movements,,804.0,Income statement
+Income statement,Company,2018,Finance costs,finance costs,finance_costs,1473.0,Income statement
+Income statement,Company,2018,Fuel and other energy costs,fuel and other energy costs,fuel_costs,6648.0,Income statement
+Income statement,Company,2018,Impairments,impairments,impairments,73.0,Income statement
+Income statement,Company,2018,Interest income,interest income,interest_income,50.0,Income statement
+Income statement,Company,2018,Loss before taxation,loss before taxation,loss_before_tax,-5051.0,Income statement
+Income statement,Company,2018,Loss for the year,loss for the year,loss_for_year,-5051.0,Income statement
+Income statement,Company,2018,Maintenance costs,maintenance costs,maintenance_costs,5951.0,Income statement
+Income statement,Company,2018,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1807.0,Income statement
+Income statement,Company,2018,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,26.0,Income statement
+Income statement,Company,2018,Operating costs,operating costs,operating_costs,29773.0,Income statement
+Income statement,Company,2018,Operating loss,operating loss,operating_loss,-3628.0,Income statement
+Income statement,Company,2018,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-3035.0,Income statement
+Income statement,Company,2018,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,7.0,Income statement
+Income statement,Company,2018,Other income,other income,other_income,1546.0,Income statement
+Income statement,Company,2018,Other operating costs,other operating costs,other_operating_costs,3558.0,Income statement
+Income statement,Company,2018,Owners of the parent,owners of the parent,,-5044.0,Income statement
+Income statement,Company,2018,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,1.0,Income statement
+Income statement,Company,2018,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-5044.0,Income statement
+Income statement,Company,2018,Total income,total income,total_income,26738.0,Income statement
+Income statement,Company,2019,Accommodation and refreshments,accommodation and refreshments,catering_costs,1329.0,Income statement
+Income statement,Company,2019,Aircraft lease costs,aircraft lease costs,lease_costs,2841.0,Income statement
+Income statement,Company,2019,Airline revenue,airline revenue,airline_revenue,22695.0,Income statement
+Income statement,Company,2019,Commissions and network charges,commissions and network charges,commission_costs,1399.0,Income statement
+Income statement,Company,2019,Depreciation and amortisation,depreciation and amortisation,depreciation,899.0,Income statement
+Income statement,Company,2019,Electronic data costs,electronic data costs,,685.0,Income statement
+Income statement,Company,2019,Employee benefit expenses,employee benefit expenses,employee_costs,4289.0,Income statement
+Income statement,Company,2019,Fair value and translation movements,fair value and translation movements,,-542.0,Income statement
+Income statement,Company,2019,Finance costs,finance costs,finance_costs,1399.0,Income statement
+Income statement,Company,2019,Fuel and other energy costs,fuel and other energy costs,fuel_costs,6987.0,Income statement
+Income statement,Company,2019,Impairments,impairments,impairments,-1178.0,Income statement
+Income statement,Company,2019,Interest income,interest income,interest_income,62.0,Income statement
+Income statement,Company,2019,Loss before taxation,loss before taxation,loss_before_tax,-5834.0,Income statement
+Income statement,Company,2019,Loss for the year,loss for the year,loss_for_year,-5834.0,Income statement
+Income statement,Company,2019,Maintenance costs,maintenance costs,maintenance_costs,4178.0,Income statement
+Income statement,Company,2019,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1546.0,Income statement
+Income statement,Company,2019,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,-1.0,Income statement
+Income statement,Company,2019,Operating costs,operating costs,operating_costs,26294.0,Income statement
+Income statement,Company,2019,Operating loss,operating loss,operating_loss,-4497.0,Income statement
+Income statement,Company,2019,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-2419.0,Income statement
+Income statement,Company,2019,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,1.0,Income statement
+Income statement,Company,2019,Other income,other income,other_income,1180.0,Income statement
+Income statement,Company,2019,Other operating costs,other operating costs,other_operating_costs,3582.0,Income statement
+Income statement,Company,2019,Owners of the parent,owners of the parent,,-5833.0,Income statement
+Income statement,Company,2019,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,1.0,Income statement
+Income statement,Company,2019,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-5833.0,Income statement
+Income statement,Company,2019,Total income,total income,total_income,23875.0,Income statement
+Income statement,Group,2011,(Loss)/profit before finance costs and investment income,(loss)/profit before finance costs and investment income,operating_loss,804.0,income state 2011-2012
+Income statement,Group,2011,(Loss)/profit before taxation,(loss)/profit before taxation,loss_before_tax,792.0,income state 2011-2012
+Income statement,Group,2011,(Loss)/profit for the year,(loss)/profit for the year,loss_for_year,779.0,income state 2011-2012
+Income statement,Group,2011,Accommodation and refreshments,accommodation and refreshments,catering_costs,658.0,income state 2011-2012
+Income statement,Group,2011,Actuarial gains and losses on defined benefit plans,actuarial gains and losses on defined benefit plans,,-45.0,income state 2011-2012
+Income statement,Group,2011,Aircraft lease costs,aircraft lease costs,lease_costs,1686.0,income state 2011-2012
+Income statement,Group,2011,Basic and diluted earnings per share (cents),basic and diluted earnings per share (cents),,6.0,income state 2011-2012
+Income statement,Group,2011,Depreciation and amortisation,depreciation and amortisation,depreciation,845.0,income state 2011-2012
+Income statement,Group,2011,Distribution costs,distribution costs,commission_costs,1227.0,income state 2011-2012
+Income statement,Group,2011,Electronic data costs,electronic data costs,,492.0,income state 2011-2012
+Income statement,Group,2011,Employee benefit expenses,employee benefit expenses,employee_costs,4417.0,income state 2011-2012
+Income statement,Group,2011,Energy,energy,fuel_costs,6086.0,income state 2011-2012
+Income statement,Group,2011,Fair value movements and translation profit/(loss),fair value movements and translation profit/(loss),,-202.0,income state 2011-2012
+Income statement,Group,2011,Finance costs,finance costs,finance_costs,168.0,income state 2011-2012
+Income statement,Group,2011,"Gains on disposal of property, aircraft and equipment","gains on disposal of property, aircraft and equipment",,-4.0,income state 2011-2012
+Income statement,Group,2011,Investment income,investment income,interest_income,156.0,income state 2011-2012
+Income statement,Group,2011,Material,material,maintenance_costs,1316.0,income state 2011-2012
+Income statement,Group,2011,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1248.0,income state 2011-2012
+Income statement,Group,2011,Net impairment write-off,net impairment write-off,impairments,71.0,income state 2011-2012
+Income statement,Group,2011,translation profit/(loss),operating (loss)/profit before fair value movements and translation profit/(loss),ebitda,1006.0,income state 2011-2012
+Income statement,Group,2011,Operating costs,operating costs,operating_costs,21602.0,income state 2011-2012
+Income statement,Group,2011,Other comprehensive income/(loss) for the year net of taxation,other comprehensive income/(loss) for the year net of taxation,,-32.0,income state 2011-2012
+Income statement,Group,2011,Other income,other income,other_income,4841.0,income state 2011-2012
+Income statement,Group,2011,Other operating costs,other operating costs,other_operating_costs,3560.0,income state 2011-2012
+Income statement,Group,2011,Owners of the parent,owners of the parent,,646.0,income state 2011-2012
+Income statement,Group,2011,Revenue,revenue,total_income,22608.0,income state 2011-2012
+Income statement,Group,2011,Subordinated loan provider,subordinated loan provider,,101.0,income state 2011-2012
+Income statement,Group,2011,Taxation,taxation,taxation,-13.0,income state 2011-2012
+Income statement,Group,2011,Taxation related to components of other comprehensive income,taxation related to components of other comprehensive income,,13.0,income state 2011-2012
+Income statement,Group,2011,Total comprehensive income/(loss),total comprehensive income/(loss),total_comprehensive_loss,747.0,income state 2011-2012
+Income statement,Group,2011,Turnover,turnover,airline_revenue,17767.0,income state 2011-2012
+Income statement,Group,2012,(Loss)/profit before finance costs and investment income,(loss)/profit before finance costs and investment income,operating_loss,-1252.0,income state 2011-2012
+Income statement,Group,2012,(Loss)/profit before taxation,(loss)/profit before taxation,loss_before_tax,-1357.0,income state 2011-2012
+Income statement,Group,2012,(Loss)/profit for the year,(loss)/profit for the year,loss_for_year,-843.0,income state 2011-2012
+Income statement,Group,2012,Accommodation and refreshments,accommodation and refreshments,catering_costs,793.0,income state 2011-2012
+Income statement,Group,2012,Actuarial gains and losses on defined benefit plans,actuarial gains and losses on defined benefit plans,,80.0,income state 2011-2012
+Income statement,Group,2012,Aircraft lease costs,aircraft lease costs,lease_costs,1797.0,income state 2011-2012
+Income statement,Group,2012,Basic and diluted earnings per share (cents),basic and diluted earnings per share (cents),,-7.0,income state 2011-2012
+Income statement,Group,2012,Depreciation and amortisation,depreciation and amortisation,depreciation,530.0,income state 2011-2012
+Income statement,Group,2012,Distribution costs,distribution costs,commission_costs,1231.0,income state 2011-2012
+Income statement,Group,2012,Electronic data costs,electronic data costs,,557.0,income state 2011-2012
+Income statement,Group,2012,Employee benefit expenses,employee benefit expenses,employee_costs,4711.0,income state 2011-2012
+Income statement,Group,2012,Energy,energy,fuel_costs,8302.0,income state 2011-2012
+Income statement,Group,2012,Fair value movements and translation profit/(loss),fair value movements and translation profit/(loss),,63.0,income state 2011-2012
+Income statement,Group,2012,Finance costs,finance costs,finance_costs,147.0,income state 2011-2012
+Income statement,Group,2012,Gains and losses on property revaluations,gains and losses on property revaluations,,935.0,income state 2011-2012
+Income statement,Group,2012,"Gains on disposal of property, aircraft and equipment","gains on disposal of property, aircraft and equipment",,-25.0,income state 2011-2012
+Income statement,Group,2012,Investment income,investment income,interest_income,42.0,income state 2011-2012
+Income statement,Group,2012,Material,material,maintenance_costs,1739.0,income state 2011-2012
+Income statement,Group,2012,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1476.0,income state 2011-2012
+Income statement,Group,2012,Net impairment write-off,net impairment write-off,impairments,44.0,income state 2011-2012
+Income statement,Group,2012,translation profit/(loss),operating (loss)/profit before fair value movements and translation profit/(loss),ebitda,-1315.0,income state 2011-2012
+Income statement,Group,2012,Operating costs,operating costs,operating_costs,25176.0,income state 2011-2012
+Income statement,Group,2012,Other comprehensive income/(loss) for the year net of taxation,other comprehensive income/(loss) for the year net of taxation,,903.0,income state 2011-2012
+Income statement,Group,2012,Other income,other income,other_income,5411.0,income state 2011-2012
+Income statement,Group,2012,Other operating costs,other operating costs,other_operating_costs,4021.0,income state 2011-2012
+Income statement,Group,2012,Owners of the parent,owners of the parent,,-32.0,income state 2011-2012
+Income statement,Group,2012,Revenue,revenue,total_income,23861.0,income state 2011-2012
+Income statement,Group,2012,Subordinated loan provider,subordinated loan provider,,92.0,income state 2011-2012
+Income statement,Group,2012,Taxation,taxation,taxation,514.0,income state 2011-2012
+Income statement,Group,2012,Taxation related to components of other comprehensive income,taxation related to components of other comprehensive income,,-112.0,income state 2011-2012
+Income statement,Group,2012,Total comprehensive income/(loss),total comprehensive income/(loss),total_comprehensive_loss,60.0,income state 2011-2012
+Income statement,Group,2012,Turnover,turnover,airline_revenue,18450.0,income state 2011-2012
+Income statement,Group,2015,Accommodation and refreshments,accommodation and refreshments,catering_costs,1040.0,Income statement 2015-2017
+Income statement,Group,2015,Aircraft lease costs,aircraft lease costs,lease_costs,2756.0,Income statement 2015-2017
+Income statement,Group,2015,Airline revenue,airline revenue,airline_revenue,29160.0,Income statement 2015-2017
+Income statement,Group,2015,"Change in value of available-for-sale
+financial asset**",change in value of available-for-sale financial asset,,3.0,Income statement 2015-2017
+Income statement,Group,2015,Commissions and network charges,commissions and network charges,commission_costs,1848.0,Income statement 2015-2017
+Income statement,Group,2015,Depreciation and amortisation,depreciation and amortisation,depreciation,825.0,Income statement 2015-2017
+Income statement,Group,2015,Electronic data costs,electronic data costs,,543.0,Income statement 2015-2017
+Income statement,Group,2015,Employee benefit expenses,employee benefit expenses,employee_costs,5698.0,Income statement 2015-2017
+Income statement,Group,2015,Fair value and translation movements,fair value and translation movements,,36.0,Income statement 2015-2017
+Income statement,Group,2015,Finance costs,finance costs,finance_costs,634.0,Income statement 2015-2017
+Income statement,Group,2015,Fuel and other energy costs,fuel and other energy costs,fuel_costs,10217.0,Income statement 2015-2017
+Income statement,Group,2015,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,48.0,Income statement 2015-2017
+Income statement,Group,2015,Impairments,impairments,impairments,-1773.0,Income statement 2015-2017
+Income statement,Group,2015,Interest income,interest income,interest_income,26.0,Income statement 2015-2017
+Income statement,Group,2015,Loss before taxation,loss before taxation,loss_before_tax,-6130.0,Income statement 2015-2017
+Income statement,Group,2015,Loss for the year,loss for the year,loss_for_year,-6142.0,Income statement 2015-2017
+Income statement,Group,2015,Maintenance costs,maintenance costs,maintenance_costs,3912.0,Income statement 2015-2017
+Income statement,Group,2015,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2207.0,Income statement 2015-2017
+Income statement,Group,2015,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,-9.0,Income statement 2015-2017
+Income statement,Group,2015,"Operating (loss)/profit before interest,
+tax, depreciation and amortisation","operating (loss)/profit before interest, tax, depreciation and amortisation",ebitda,-2915.0,Income statement 2015-2017
+Income statement,Group,2015,Operating costs,operating costs,operating_costs,33407.0,Income statement 2015-2017
+Income statement,Group,2015,Operating loss,operating loss,operating_loss,-5522.0,Income statement 2015-2017
+Income statement,Group,2015,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,20.0,Income statement 2015-2017
+Income statement,Group,2015,Other income,other income,other_income,1332.0,Income statement 2015-2017
+Income statement,Group,2015,Other operating costs,other operating costs,other_operating_costs,5150.0,Income statement 2015-2017
+Income statement,Group,2015,Owners of the parent,owners of the parent,,-6122.0,Income statement 2015-2017
+Income statement,Group,2015,"Remeasurements of defined benefit
+plans*",remeasurements of defined benefit plans,,-6.0,Income statement 2015-2017
+Income statement,Group,2015,Taxation,taxation,taxation,-12.0,Income statement 2015-2017
+Income statement,Group,2015,"Taxation related to components of other
+comprehensive income",taxation related to components of other comprehensive income,,-25.0,Income statement 2015-2017
+Income statement,Group,2015,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-6122.0,Income statement 2015-2017
+Income statement,Group,2015,Total income,total income,total_income,30492.0,Income statement 2015-2017
+Income statement,Group,2016,Accommodation and refreshments,accommodation and refreshments,catering_costs,1279.0,Income statement 2015-2017
+Income statement,Group,2016,Aircraft lease costs,aircraft lease costs,lease_costs,3132.0,Income statement 2015-2017
+Income statement,Group,2016,Airline revenue,airline revenue,airline_revenue,29273.0,Income statement 2015-2017
+Income statement,Group,2016,"Change in value of available-for-sale
+financial asset**",change in value of available-for-sale financial asset,,5.0,Income statement 2015-2017
+Income statement,Group,2016,Commissions and network charges,commissions and network charges,commission_costs,1829.0,Income statement 2015-2017
+Income statement,Group,2016,Depreciation and amortisation,depreciation and amortisation,depreciation,732.0,Income statement 2015-2017
+Income statement,Group,2016,Electronic data costs,electronic data costs,,657.0,Income statement 2015-2017
+Income statement,Group,2016,Employee benefit expenses,employee benefit expenses,employee_costs,5831.0,Income statement 2015-2017
+Income statement,Group,2016,Fair value and translation movements,fair value and translation movements,,-808.0,Income statement 2015-2017
+Income statement,Group,2016,Finance costs,finance costs,finance_costs,1030.0,Income statement 2015-2017
+Income statement,Group,2016,Fuel and other energy costs,fuel and other energy costs,fuel_costs,7344.0,Income statement 2015-2017
+Income statement,Group,2016,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,-18.0,Income statement 2015-2017
+Income statement,Group,2016,Impairments,impairments,impairments,-158.0,Income statement 2015-2017
+Income statement,Group,2016,Interest income,interest income,interest_income,26.0,Income statement 2015-2017
+Income statement,Group,2016,Loss before taxation,loss before taxation,loss_before_tax,-1378.0,Income statement 2015-2017
+Income statement,Group,2016,Loss for the year,loss for the year,loss_for_year,-1478.0,Income statement 2015-2017
+Income statement,Group,2016,Maintenance costs,maintenance costs,maintenance_costs,4167.0,Income statement 2015-2017
+Income statement,Group,2016,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2384.0,Income statement 2015-2017
+Income statement,Group,2016,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,-6.0,Income statement 2015-2017
+Income statement,Group,2016,"Operating (loss)/profit before interest,
+tax, depreciation and amortisation","operating (loss)/profit before interest, tax, depreciation and amortisation",ebitda,522.0,Income statement 2015-2017
+Income statement,Group,2016,Operating costs,operating costs,operating_costs,30194.0,Income statement 2015-2017
+Income statement,Group,2016,Operating loss,operating loss,operating_loss,-374.0,Income statement 2015-2017
+Income statement,Group,2016,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,-19.0,Income statement 2015-2017
+Income statement,Group,2016,Other income,other income,other_income,1443.0,Income statement 2015-2017
+Income statement,Group,2016,Other operating costs,other operating costs,other_operating_costs,4379.0,Income statement 2015-2017
+Income statement,Group,2016,Owners of the parent,owners of the parent,,-1497.0,Income statement 2015-2017
+Income statement,Group,2016,"Remeasurements of defined benefit
+plans*",remeasurements of defined benefit plans,,-6.0,Income statement 2015-2017
+Income statement,Group,2016,Taxation,taxation,taxation,-100.0,Income statement 2015-2017
+Income statement,Group,2016,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-1497.0,Income statement 2015-2017
+Income statement,Group,2016,Total income,total income,total_income,30716.0,Income statement 2015-2017
+Income statement,Group,2017,Accommodation and refreshments,accommodation and refreshments,catering_costs,1409.0,Income statement
+Income statement,Group,2017,Aircraft lease costs,aircraft lease costs,lease_costs,3103.0,Income statement
+Income statement,Group,2017,Airline revenue,airline revenue,airline_revenue,29313.0,Income statement
+Income statement,Group,2017,"Change in value of available–for–sale financial
+asset**",change in value of available-for-sale financial asset,,6.0,Income statement
+Income statement,Group,2017,Commissions and network charges,commissions and network charges,commission_costs,1894.0,Income statement
+Income statement,Group,2017,Depreciation and amortisation,depreciation and amortisation,depreciation,1033.0,Income statement
+Income statement,Group,2017,Electronic data costs,electronic data costs,,680.0,Income statement
+Income statement,Group,2017,Employee benefit expenses,employee benefit expenses,employee_costs,6130.0,Income statement
+Income statement,Group,2017,Fair value and translation movements,fair value and translation movements,,1092.0,Income statement
+Income statement,Group,2017,Finance costs,finance costs,finance_costs,1630.0,Income statement
+Income statement,Group,2017,Fuel and other energy costs,fuel and other energy costs,fuel_costs,7365.0,Income statement
+Income statement,Group,2017,Gains on property revaluations*,gains on property revaluations,,173.0,Income statement
+Income statement,Group,2017,"Gains/(impairments) on property
+revaluations*",gains/(impairments) on property revaluations,,173.0,Income statement 2015-2017
+Income statement,Group,2017,Impairments,impairments,impairments,26.0,Income statement
+Income statement,Group,2017,Interest income,interest income,interest_income,40.0,Income statement
+Income statement,Group,2017,Loss before taxation,loss before taxation,loss_before_tax,-5229.0,Income statement
+Income statement,Group,2017,Loss for the year,loss for the year,loss_for_year,-5439.0,Income statement
+Income statement,Group,2017,Maintenance costs,maintenance costs,maintenance_costs,4812.0,Income statement
+Income statement,Group,2017,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2429.0,Income statement
+Income statement,Group,2017,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,7.0,Income statement
+Income statement,Group,2017,"Net gain/(loss) on disposal of property,
+aircraft and equipment","net gain/(loss) on disposal of property, aircraft and equipment",,7.0,Income statement 2015-2017
+Income statement,Group,2017,Operating costs,operating costs,operating_costs,33428.0,Income statement
+Income statement,Group,2017,Operating loss,operating loss,operating_loss,-3639.0,Income statement
+Income statement,Group,2017,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-2639.0,Income statement
+Income statement,Group,2017,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,138.0,Income statement
+Income statement,Group,2017,"Other comprehensive income/(loss)
+for the year net of taxation",other comprehensive income/(loss) for the year net of taxation,,138.0,Income statement 2015-2017
+Income statement,Group,2017,Other income,other income,other_income,1476.0,Income statement
+Income statement,Group,2017,Other operating costs,other operating costs,other_operating_costs,4514.0,Income statement
+Income statement,Group,2017,Owners of the parent,owners of the parent,,-5301.0,Income statement
+Income statement,Group,2017,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,-11.0,Income statement
+Income statement,Group,2017,Taxation,taxation,taxation,-210.0,Income statement
+Income statement,Group,2017,"Taxation related to components of other
+comprehensive income",taxation related to components of other comprehensive income,,-30.0,Income statement
+Income statement,Group,2017,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-5301.0,Income statement
+Income statement,Group,2017,Total income,total income,total_income,30789.0,Income statement
+Income statement,Group,2018,Accommodation and refreshments,accommodation and refreshments,catering_costs,1222.0,Income statement
+Income statement,Group,2018,Aircraft lease costs,aircraft lease costs,lease_costs,3350.0,Income statement
+Income statement,Group,2018,Airline revenue,airline revenue,airline_revenue,28105.0,Income statement
+Income statement,Group,2018,"Change in value of available–for–sale financial
+asset**",change in value of available-for-sale financial asset,,6.0,Income statement
+Income statement,Group,2018,Commissions and network charges,commissions and network charges,commission_costs,1793.0,Income statement
+Income statement,Group,2018,Depreciation and amortisation,depreciation and amortisation,depreciation,775.0,Income statement
+Income statement,Group,2018,Electronic data costs,electronic data costs,,642.0,Income statement
+Income statement,Group,2018,Employee benefit expenses,employee benefit expenses,employee_costs,6140.0,Income statement
+Income statement,Group,2018,Fair value and translation movements,fair value and translation movements,,829.0,Income statement
+Income statement,Group,2018,Finance costs,finance costs,finance_costs,1472.0,Income statement
+Income statement,Group,2018,Fuel and other energy costs,fuel and other energy costs,fuel_costs,7359.0,Income statement
+Income statement,Group,2018,Impairments,impairments,impairments,-568.0,Income statement
+Income statement,Group,2018,Interest income,interest income,interest_income,87.0,Income statement
+Income statement,Group,2018,Loss before taxation,loss before taxation,loss_before_tax,-5436.0,Income statement
+Income statement,Group,2018,Loss for the year,loss for the year,loss_for_year,-5485.0,Income statement
+Income statement,Group,2018,Maintenance costs,maintenance costs,maintenance_costs,4392.0,Income statement
+Income statement,Group,2018,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,2046.0,Income statement
+Income statement,Group,2018,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,-43.0,Income statement
+Income statement,Group,2018,Operating costs,operating costs,operating_costs,32071.0,Income statement
+Income statement,Group,2018,Operating loss,operating loss,operating_loss,-4051.0,Income statement
+Income statement,Group,2018,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-2665.0,Income statement
+Income statement,Group,2018,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,7.0,Income statement
+Income statement,Group,2018,Other income,other income,other_income,1301.0,Income statement
+Income statement,Group,2018,Other operating costs,other operating costs,other_operating_costs,4298.0,Income statement
+Income statement,Group,2018,Owners of the parent,owners of the parent,,-5478.0,Income statement
+Income statement,Group,2018,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,1.0,Income statement
+Income statement,Group,2018,Taxation,taxation,taxation,-49.0,Income statement
+Income statement,Group,2018,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-5478.0,Income statement
+Income statement,Group,2018,Total income,total income,total_income,29406.0,Income statement
+Income statement,Group,2019,Accommodation and refreshments,accommodation and refreshments,catering_costs,1075.0,Income statement
+Income statement,Group,2019,Aircraft lease costs,aircraft lease costs,lease_costs,3218.0,Income statement
+Income statement,Group,2019,Airline revenue,airline revenue,airline_revenue,26008.0,Income statement
+Income statement,Group,2019,Commissions and network charges,commissions and network charges,commission_costs,1509.0,Income statement
+Income statement,Group,2019,Depreciation and amortisation,depreciation and amortisation,depreciation,1004.0,Income statement
+Income statement,Group,2019,Electronic data costs,electronic data costs,,701.0,Income statement
+Income statement,Group,2019,Employee benefit expenses,employee benefit expenses,employee_costs,6589.0,Income statement
+Income statement,Group,2019,Fair value and translation movements,fair value and translation movements,,-558.0,Income statement
+Income statement,Group,2019,Finance costs,finance costs,finance_costs,1432.0,Income statement
+Income statement,Group,2019,Fuel and other energy costs,fuel and other energy costs,fuel_costs,8016.0,Income statement
+Income statement,Group,2019,Impairments,impairments,impairments,-1190.0,Income statement
+Income statement,Group,2019,Interest income,interest income,interest_income,54.0,Income statement
+Income statement,Group,2019,Loss before taxation,loss before taxation,loss_before_tax,-6528.0,Income statement
+Income statement,Group,2019,Loss for the year,loss for the year,loss_for_year,-6483.0,Income statement
+Income statement,Group,2019,Maintenance costs,maintenance costs,maintenance_costs,3548.0,Income statement
+Income statement,Group,2019,"Navigation, landing and parking fees","navigation, landing and parking fees",navigation_costs,1856.0,Income statement
+Income statement,Group,2019,"Net (loss)/gain on disposal of property, aircraft
+and equipment","net (loss)/gain on disposal of property, aircraft and equipment",,-5.0,Income statement
+Income statement,Group,2019,Operating costs,operating costs,operating_costs,29943.0,Income statement
+Income statement,Group,2019,Operating loss,operating loss,operating_loss,-5150.0,Income statement
+Income statement,Group,2019,"Operating loss before interest, tax, depreciation
+and amortisation","operating loss before interest, tax, depreciation and amortisation",ebitda,-2951.0,Income statement
+Income statement,Group,2019,"Other comprehensive income for the year net
+of taxation",other comprehensive income for the year net of taxation,,1.0,Income statement
+Income statement,Group,2019,Other income,other income,other_income,984.0,Income statement
+Income statement,Group,2019,Other operating costs,other operating costs,other_operating_costs,3989.0,Income statement
+Income statement,Group,2019,Owners of the parent,owners of the parent,,-6482.0,Income statement
+Income statement,Group,2019,Remeasurements of defined benefit plans*,remeasurements of defined benefit plans,,1.0,Income statement
+Income statement,Group,2019,Taxation,taxation,taxation,45.0,Income statement
+Income statement,Group,2019,Total comprehensive loss,total comprehensive loss,total_comprehensive_loss,-6482.0,Income statement
+Income statement,Group,2019,Total income,total income,total_income,26992.0,Income statement

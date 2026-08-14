@@ -1,0 +1,73 @@
+statement,entity,year,dedup_key,original_rm,restated_rm,original_sheet,restated_sheet,difference_rm,pct_change
+Balance sheet,Company,2017,accumulated_loss,-32127.0,-32188.0,Balance sheet 2015-2017,Balance Sheet,-61.0,-0.18987144769197248
+Balance sheet,Company,2017,cash,2484.0,2212.0,Balance sheet 2015-2017,Balance Sheet,-272.0,-10.950080515297907
+Balance sheet,Company,2017,current_assets,9085.0,8154.0,Balance sheet 2015-2017,Balance Sheet,-931.0,-10.247660979636763
+Balance sheet,Company,2017,current_liabilities,21993.0,22030.0,Balance sheet 2015-2017,Balance Sheet,37.0,0.16823534761060335
+Balance sheet,Company,2017,deferred_revenue_current,4058.0,4158.0,Balance sheet 2015-2017,Balance Sheet,100.0,2.464268112370626
+Balance sheet,Company,2017,inventories,101.0,89.0,Balance sheet 2015-2017,Balance Sheet,-12.0,-11.881188118811881
+Balance sheet,Company,2017,non_current_assets,5410.0,6317.0,Balance sheet 2015-2017,Balance Sheet,907.0,16.76524953789279
+Balance sheet,Company,2017,payables,7786.0,7723.0,Balance sheet 2015-2017,Balance Sheet,-63.0,-0.8091446185461084
+Balance sheet,Company,2017,receivables,5225.0,3919.0,Balance sheet 2015-2017,Balance Sheet,-1306.0,-24.995215311004785
+Balance sheet,Company,2017,total_assets,14594.0,14570.0,Balance sheet 2015-2017,Balance Sheet,-24.0,-0.16445114430587912
+Balance sheet,Company,2017,total_equity,-18555.0,-18616.0,Balance sheet 2015-2017,Balance Sheet,-61.0,-0.3287523578550256
+Balance sheet,Company,2017,total_equity_and_liabilities,14594.0,14570.0,Balance sheet 2015-2017,Balance Sheet,-24.0,-0.16445114430587912
+Balance sheet,Company,2017,total_liabilities,33149.0,33186.0,Balance sheet 2015-2017,Balance Sheet,37.0,0.11161724335575735
+Balance sheet,Group,2017,accumulated_loss,-31640.0,-31712.0,Balance sheet 2015-2017,Balance Sheet,-72.0,-0.2275600505689001
+Balance sheet,Group,2017,cash,2872.0,2600.0,Balance sheet 2015-2017,Balance Sheet,-272.0,-9.47075208913649
+Balance sheet,Group,2017,current_assets,9163.0,8218.0,Balance sheet 2015-2017,Balance Sheet,-945.0,-10.313216195569137
+Balance sheet,Group,2017,current_liabilities,22481.0,22523.0,Balance sheet 2015-2017,Balance Sheet,42.0,0.18682442951825987
+Balance sheet,Group,2017,deferred tax asset,33.0,41.0,Balance sheet 2015-2017,Balance Sheet,8.0,24.242424242424242
+Balance sheet,Group,2017,deferred_revenue_current,4275.0,4375.0,Balance sheet 2015-2017,Balance Sheet,100.0,2.3391812865497075
+Balance sheet,Group,2017,inventories,879.0,867.0,Balance sheet 2015-2017,Balance Sheet,-12.0,-1.3651877133105803
+Balance sheet,Group,2017,non_current_assets,6654.0,7569.0,Balance sheet 2015-2017,Balance Sheet,915.0,13.75112714156898
+Balance sheet,Group,2017,payables,8285.0,8227.0,Balance sheet 2015-2017,Balance Sheet,-58.0,-0.700060350030175
+Balance sheet,Group,2017,receivables,5333.0,3976.0,Balance sheet 2015-2017,Balance Sheet,-1357.0,-25.44534033377086
+Balance sheet,Group,2017,total_assets,15916.0,15886.0,Balance sheet 2015-2017,Balance Sheet,-30.0,-0.18848957024377985
+Balance sheet,Group,2017,total_equity,-17802.0,-17874.0,Balance sheet 2015-2017,Balance Sheet,-72.0,-0.40444893832153694
+Balance sheet,Group,2017,total_equity_and_liabilities,15916.0,15886.0,Balance sheet 2015-2017,Balance Sheet,-30.0,-0.18848957024377985
+Balance sheet,Group,2017,total_liabilities,33718.0,33760.0,Balance sheet 2015-2017,Balance Sheet,42.0,0.12456254819384306
+Cash flow,Company,2017,borrowings_repaid,-367.0,-350.0,cash flow2015-2017,cash flow,17.0,4.632152588555858
+Cash flow,Company,2017,cash and cash equivalents at the beginning of the year,2044.0,1987.0,cash flow2015-2017,cash flow,-57.0,-2.7886497064579254
+Cash flow,Company,2017,cash_from_operations,425.0,195.0,cash flow2015-2017,cash flow,-230.0,-54.11764705882353
+Cash flow,Company,2017,closing_cash,2484.0,2212.0,cash flow2015-2017,cash flow,-272.0,-10.950080515297907
+Cash flow,Company,2017,net_financing_cash,2553.0,2570.0,cash flow2015-2017,cash flow,17.0,0.6658832745789268
+Cash flow,Company,2017,net_operating_cash,-1253.0,-1485.0,cash flow2015-2017,cash flow,-232.0,-18.515562649640863
+Cash flow,Company,2017,tax_paid,7.0,9.0,cash flow2015-2017,cash flow,2.0,28.57142857142857
+Cash flow,Group,2017,borrowings_repaid,-371.0,-353.0,cash flow2015-2017,cash flow,18.0,4.8517520215633425
+Cash flow,Group,2017,cash and cash equivalents at the beginning of the year,2701.0,2644.0,cash flow2015-2017,cash flow,-57.0,-2.110329507589782
+Cash flow,Group,2017,cash_from_operations,219.0,-13.0,cash flow2015-2017,cash flow,-232.0,-105.93607305936072
+Cash flow,Group,2017,closing_cash,2872.0,2600.0,cash flow2015-2017,cash flow,-272.0,-9.47075208913649
+Cash flow,Group,2017,net_financing_cash,2547.0,2565.0,cash flow2015-2017,cash flow,18.0,0.7067137809187279
+Cash flow,Group,2017,net_operating_cash,-1399.0,-1632.0,cash flow2015-2017,cash flow,-233.0,-16.654753395282345
+Cash flow,Group,2017,tax_paid,8.0,9.0,cash flow2015-2017,cash flow,1.0,12.5
+Income statement,Company,2017,airline_revenue,26789.0,26539.0,Income statement 2015-2017,Income statement,-250.0,-0.9332188584866922
+Income statement,Company,2017,catering_costs,1715.0,1711.0,Income statement 2015-2017,Income statement,-4.0,-0.23323615160349853
+Income statement,Company,2017,ebitda,-2959.0,-2845.0,Income statement 2015-2017,Income statement,114.0,3.852652923284894
+Income statement,Company,2017,employee_costs,4013.0,4012.0,Income statement 2015-2017,Income statement,-1.0,-0.024919013207077
+Income statement,Company,2017,fuel_costs,6738.0,6735.0,Income statement 2015-2017,Income statement,-3.0,-0.04452359750667854
+Income statement,Company,2017,loss_before_tax,-6451.0,-6337.0,Income statement 2015-2017,Income statement,114.0,1.7671678809486902
+Income statement,Company,2017,loss_for_year,-6451.0,-6337.0,Income statement 2015-2017,Income statement,114.0,1.7671678809486902
+Income statement,Company,2017,maintenance_costs,6198.0,6181.0,Income statement 2015-2017,Income statement,-17.0,-0.27428202646014843
+Income statement,Company,2017,operating_costs,31278.0,31244.0,Income statement 2015-2017,Income statement,-34.0,-0.10870260246818851
+Income statement,Company,2017,operating_loss,-4800.0,-4686.0,Income statement 2015-2017,Income statement,114.0,2.375
+Income statement,Company,2017,other_income,1530.0,1860.0,Income statement 2015-2017,Income statement,330.0,21.568627450980394
+Income statement,Company,2017,other_operating_costs,3886.0,3877.0,Income statement 2015-2017,Income statement,-9.0,-0.23160061760164694
+Income statement,Company,2017,owners of the parent,-6389.0,-6275.0,Income statement 2015-2017,Income statement,114.0,1.7843167944905307
+Income statement,Company,2017,total_comprehensive_loss,-6389.0,-6275.0,Income statement 2015-2017,Income statement,114.0,1.7843167944905307
+Income statement,Company,2017,total_income,28319.0,28399.0,Income statement 2015-2017,Income statement,80.0,0.28249585084219075
+Income statement,Group,2017,airline_revenue,29273.0,29313.0,Income statement 2015-2017,Income statement,40.0,0.13664468964574863
+Income statement,Group,2017,catering_costs,1413.0,1409.0,Income statement 2015-2017,Income statement,-4.0,-0.28308563340410475
+Income statement,Group,2017,ebitda,-2760.0,-2639.0,Income statement 2015-2017,Income statement,121.0,4.384057971014492
+Income statement,Group,2017,employee_costs,6131.0,6130.0,Income statement 2015-2017,Income statement,-1.0,-0.016310552927744252
+Income statement,Group,2017,fuel_costs,7368.0,7365.0,Income statement 2015-2017,Income statement,-3.0,-0.04071661237785017
+Income statement,Group,2017,loss_before_tax,-5350.0,-5229.0,Income statement 2015-2017,Income statement,121.0,2.2616822429906542
+Income statement,Group,2017,loss_for_year,-5569.0,-5439.0,Income statement 2015-2017,Income statement,130.0,2.3343508708924405
+Income statement,Group,2017,maintenance_costs,4895.0,4812.0,Income statement 2015-2017,Income statement,-83.0,-1.6956077630234934
+Income statement,Group,2017,operating_costs,33502.0,33428.0,Income statement 2015-2017,Income statement,-74.0,-0.22088233538296223
+Income statement,Group,2017,operating_loss,-3760.0,-3639.0,Income statement 2015-2017,Income statement,121.0,3.2180851063829783
+Income statement,Group,2017,other_income,1469.0,1476.0,Income statement 2015-2017,Income statement,7.0,0.4765146358066712
+Income statement,Group,2017,other_operating_costs,4497.0,4514.0,Income statement 2015-2017,Income statement,17.0,0.37802979764287303
+Income statement,Group,2017,owners of the parent,-5431.0,-5301.0,Income statement 2015-2017,Income statement,130.0,2.393665991530105
+Income statement,Group,2017,taxation,-219.0,-210.0,Income statement 2015-2017,Income statement,9.0,4.10958904109589
+Income statement,Group,2017,total_comprehensive_loss,-5431.0,-5301.0,Income statement 2015-2017,Income statement,130.0,2.393665991530105
+Income statement,Group,2017,total_income,30742.0,30789.0,Income statement 2015-2017,Income statement,47.0,0.15288530349359183
