@@ -102,6 +102,71 @@ def blank_years(frame: pd.DataFrame) -> pd.DataFrame:
     return frame.set_index("year").reindex(YEARS).reset_index()
 
 
+ML_FEATURES = [
+    "roa", "gearing", "wc_to_assets", "current_ratio",
+    "retained_to_assets", "ebit_to_assets", "equity_to_liabilities",
+    "asset_turnover", "equity_ratio", "quick_ratio",
+]
+ML_FEATURE_LABELS = {
+    "roa": "Net profit / total assets",
+    "gearing": "Total liabilities / total assets",
+    "wc_to_assets": "Working capital / total assets",
+    "current_ratio": "Current assets / current liabilities",
+    "retained_to_assets": "Retained earnings / total assets",
+    "ebit_to_assets": "EBIT / total assets",
+    "equity_to_liabilities": "Book equity / total liabilities",
+    "asset_turnover": "Sales / total assets",
+    "equity_ratio": "Equity / total assets",
+    "quick_ratio": "(Current assets − inventory) / current liabilities",
+}
+
+
+@st.cache_resource(show_spinner=False)
+def load_fitted_models() -> dict:
+    import joblib
+    p = DATA_DIR / "ml_models.pkl"
+    return joblib.load(p) if p.exists() else {}
+
+
+def synthetic_population(n: int, failure_rate: float, seed: int):
+    """Minimal synthetic training population for in-session refit."""
+    rng = np.random.default_rng(seed)
+    n_fail = int(n * failure_rate)
+    n_surv = n - n_fail
+    specs = {
+        "roa": (-0.08, 0.05, 0.12), "gearing": (0.85, 0.50, 0.25),
+        "wc_to_assets": (-0.15, 0.10, 0.20), "current_ratio": (0.65, 1.80, 0.60),
+        "retained_to_assets": (-0.30, 0.05, 0.30), "ebit_to_assets": (-0.08, 0.06, 0.10),
+        "equity_to_liabilities": (-0.20, 0.80, 0.60), "asset_turnover": (0.70, 1.10, 0.45),
+        "equity_ratio": (-0.05, 0.40, 0.30), "quick_ratio": (0.55, 1.50, 0.55),
+    }
+    data = {col: np.concatenate([rng.normal(mf, s, n_fail), rng.normal(ms, s, n_surv)])
+            for col, (mf, ms, s) in specs.items()}
+    X = pd.DataFrame(data)
+    y = pd.Series(np.concatenate([np.ones(n_fail), np.zeros(n_surv)]), dtype=int)
+    lower, upper = X.quantile(0.01), X.quantile(0.99)
+    X = X.clip(lower=lower, upper=upper, axis=1)
+    idx = rng.permutation(len(X))
+    return X.iloc[idx].reset_index(drop=True), y.iloc[idx].reset_index(drop=True)
+
+
+def saa_features_inline(frame: pd.DataFrame) -> pd.DataFrame:
+    """Compute the ten ML ratio inputs from the already-filtered `ent` frame."""
+    d = frame.set_index("year")
+    out = pd.DataFrame(index=d.index)
+    out["roa"] = d["loss_for_year"] / d["total_assets"]
+    out["gearing"] = d["total_liabilities"] / d["total_assets"]
+    out["wc_to_assets"] = (d["current_assets"] - d["current_liabilities"]) / d["total_assets"]
+    out["current_ratio"] = d["current_assets"] / d["current_liabilities"]
+    out["retained_to_assets"] = d["accumulated_loss"] / d["total_assets"]
+    out["ebit_to_assets"] = d["operating_loss"] / d["total_assets"]
+    out["equity_to_liabilities"] = d["total_equity"] / d["total_liabilities"]
+    out["asset_turnover"] = d["total_income"] / d["total_assets"]
+    out["equity_ratio"] = d["total_equity"] / d["total_assets"]
+    out["quick_ratio"] = (d["current_assets"] - d["inventories"]) / d["current_liabilities"]
+    return out.dropna(how="any")
+
+
 @st.cache_data(show_spinner=False)
 def load_ml() -> tuple[dict, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Load ML outputs produced by saa_ml.py, or return empty structures."""
@@ -1067,6 +1132,124 @@ with tab_ml:
                 f"across the benchmark population; the odds-ratio table shows their "
                 f"direction in the logistic model."
             )
+
+# --------------------------------------------------------------------------
+# Uploader — score custom airline rows through the fitted models
+# --------------------------------------------------------------------------
+with tab_ml:
+    st.markdown("---")
+    st.markdown("### Upload comparator data")
+
+    fitted = load_fitted_models()
+    model_names_fitted = list(fitted.keys()) if fitted else []
+
+    col_up, col_dl = st.columns([3, 1])
+    with col_up:
+        uploaded_file = st.file_uploader(
+            "Drop a CSV here to score airline-years through the fitted models.",
+            type="csv",
+            help="Must contain the ten ratio columns. "
+                 "Add a `failed` column (0/1) if you want to offer retraining.",
+        )
+    with col_dl:
+        tpl = (DATA_DIR / "comparator_template.csv")
+        if tpl.exists():
+            st.download_button(
+                "Download template",
+                tpl.read_bytes(),
+                "comparator_template.csv",
+                "text/csv",
+            )
+        st.markdown(
+            f"<div style='font-family:IBM Plex Mono,monospace;font-size:.72rem;"
+            f"color:{MUTED};margin-top:.4rem'>"
+            f"All ratios in decimal form<br>(e.g. gearing 0.85, not 85%).</div>",
+            unsafe_allow_html=True,
+        )
+
+    if uploaded_file is not None:
+        try:
+            up = pd.read_csv(uploaded_file)
+            missing_cols = [c for c in ML_FEATURES if c not in up.columns]
+            if missing_cols:
+                st.error(f"Missing columns: {', '.join(missing_cols)}. "
+                         "Download the template above to see the required format.")
+            elif not fitted:
+                st.warning("Fitted models not found (`data/ml_models.pkl`). "
+                           "Re-run `generate_ml_demo.py` to generate them.")
+            else:
+                scored = up.copy()
+                for mname, pipe in fitted.items():
+                    short = mname.split()[0].lower()
+                    scored[f"p_fail_{short}"] = (
+                        pipe.predict_proba(up[ML_FEATURES])[:, 1] * 100
+                    ).round(1)
+
+                label_cols = [c for c in ["company", "year", "failed", "source"]
+                              if c in scored.columns]
+                prob_cols = [c for c in scored.columns if c.startswith("p_fail_")]
+                st.success(f"Scored {len(scored)} row(s) through "
+                           f"{len(fitted)} model(s).")
+                display = scored[label_cols + prob_cols].rename(
+                    columns={c: c.replace("p_fail_", "P(fail) % · ")
+                             for c in prob_cols}
+                )
+                table(display)
+
+                has_labels = (
+                    "failed" in up.columns
+                    and up["failed"].nunique() == 2
+                )
+                if has_labels:
+                    n = len(up)
+                    st.warning(
+                        f"Your file has a `failed` column with both classes "
+                        f"({n} rows). **Retraining on {n} rows alone would "
+                        f"severely overfit** — this option combines your rows "
+                        f"with the 6,000-firm synthetic base before refitting."
+                    )
+                    if st.button("Refit models with uploaded data (combined)"):
+                        from sklearn.ensemble import RandomForestClassifier
+                        from sklearn.impute import SimpleImputer
+                        from sklearn.linear_model import LogisticRegression
+                        from sklearn.pipeline import Pipeline
+                        from sklearn.preprocessing import StandardScaler
+                        X_up = up[ML_FEATURES]
+                        y_up = up["failed"].astype(int)
+                        X_base, y_base = synthetic_population(6000, 0.07, 42)
+                        X_all = pd.concat([X_base, X_up], ignore_index=True)
+                        y_all = pd.concat([y_base, y_up], ignore_index=True)
+
+                        new_lr = Pipeline([
+                            ("impute", SimpleImputer(strategy="median")),
+                            ("scale", StandardScaler()),
+                            ("model", LogisticRegression(max_iter=2000,
+                                class_weight="balanced", random_state=42)),
+                        ]).fit(X_all, y_all)
+                        new_rf = Pipeline([
+                            ("impute", SimpleImputer(strategy="median")),
+                            ("model", RandomForestClassifier(n_estimators=300,
+                                min_samples_leaf=3, class_weight="balanced_subsample",
+                                n_jobs=-1, random_state=42)),
+                        ]).fit(X_all, y_all)
+
+                        st.success(
+                            f"Models refit on {len(X_all):,} rows "
+                            f"({len(y_all[y_all==1])} failures). "
+                            "Rescoring SAA with updated models:"
+                        )
+                        saa_x = saa_features_inline(ent)
+                        if not saa_x.empty:
+                            saa_x["P(fail) % · logistic"] = (
+                                new_lr.predict_proba(saa_x[ML_FEATURES])[:, 1] * 100
+                            ).round(1)
+                            saa_x["P(fail) % · forest"] = (
+                                new_rf.predict_proba(saa_x[ML_FEATURES])[:, 1] * 100
+                            ).round(1)
+                            table(saa_x[["P(fail) % · logistic",
+                                        "P(fail) % · forest"]].reset_index())
+        except Exception as exc:
+            st.error(f"Could not read the file: {exc}")
 
 # --------------------------------------------------------------------------
 # TAB 7 — Data and export

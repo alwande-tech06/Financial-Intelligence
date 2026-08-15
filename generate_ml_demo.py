@@ -235,7 +235,11 @@ def main():
                   "ratio distributions (Altman 1968, Zmijewski 1984 literature).",
     }
     (outdir / "ml_metrics.json").write_text(json.dumps(meta, indent=2))
+
+    import joblib
+    joblib.dump(models, outdir / "ml_models.pkl")
     print(f"\nWrote ML outputs to {outdir}/")
+    print(f"  ml_models.pkl — fitted pipelines for in-app scoring of uploaded data")
 
 
 if __name__ == "__main__":
