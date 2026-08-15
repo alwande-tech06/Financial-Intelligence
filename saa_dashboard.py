@@ -440,17 +440,21 @@ with tab_overview:
 
     with st.expander("Interpretation — what this view shows"):
         first_loss = ent[ent["loss_for_year"] < 0]["year"].min()
-        worst = ent.loc[ent["loss_for_year"].idxmin()] if ent["loss_for_year"].notna().any() else None
-        st.markdown(
-            f"- The cost base overtook total income from FY{int(first_loss)} onward and never "
-            f"recovered: {entity} reported a loss in every subsequent published year.\n"
-            f"- The deepest loss in the series is FY{int(worst['year'])} at "
-            f"{rm(worst['loss_for_year'])}, driven by an operating result of "
-            f"{rm(worst['operating_loss'])} before finance costs of "
-            f"{rm(worst['finance_costs'])}.\n"
-            f"- The waterfall isolates where value is destroyed: the loss is created above "
-            f"the EBITDA line, in the operating cost base, not by financing or tax."
-        )
+        has_loss = pd.notna(first_loss) and ent["loss_for_year"].notna().any()
+        worst = ent.loc[ent["loss_for_year"].idxmin()] if has_loss else None
+        if not has_loss:
+            st.markdown("- No loss years in the selected range.")
+        else:
+            st.markdown(
+                f"- The cost base overtook total income from FY{int(first_loss)} onward and never "
+                f"recovered: {entity} reported a loss in every subsequent published year.\n"
+                f"- The deepest loss in the series is FY{int(worst['year'])} at "
+                f"{rm(worst['loss_for_year'])}, driven by an operating result of "
+                f"{rm(worst['operating_loss'])} before finance costs of "
+                f"{rm(worst['finance_costs'])}.\n"
+                f"- The waterfall isolates where value is destroyed: the loss is created above "
+                f"the EBITDA line, in the operating cost base, not by financing or tax."
+            )
 
 # --------------------------------------------------------------------------
 # TAB 2 — Profitability and cost structure
@@ -532,7 +536,10 @@ with tab_profit:
         fuel = series["fuel_share"].dropna()
         staff = series["staff_share"].dropna()
         cti = series["cost_to_income"].dropna()
-        st.markdown(
+        if cti.empty or fuel.empty:
+            st.markdown("- Insufficient data in the selected range.")
+        else:
+          st.markdown(
             f"- Cost-to-income moved from {num(cti.iloc[0], 1)}% in FY{int(cti.index[0])} "
             f"to {num(cti.iloc[-1], 1)}% in FY{int(cti.index[-1])}: every rand of income "
             f"was consumed by more than a rand of cost.\n"
@@ -543,7 +550,7 @@ with tab_profit:
             f"- The index chart separates a revenue problem from a cost problem: "
             f"income is broadly flat while the cost line climbs, so the deficit is "
             f"structural rather than cyclical."
-        )
+          )
 
 # --------------------------------------------------------------------------
 # TAB 3 — Financial position
@@ -630,16 +637,19 @@ with tab_position:
     with st.expander("Interpretation — what this view shows"):
         neg_equity = ent[ent["total_equity"] < 0]["year"]
         wc = series["working_capital"].dropna()
-        st.markdown(
-            f"- Equity turns negative from FY{int(neg_equity.min())} and stays negative: "
-            f"liabilities exceed assets, which is technical insolvency and the trigger "
-            f"discussed in the going-concern and business-rescue analysis.\n"
-            f"- The working-capital deficit widens to {rm(wc.iloc[-1])} by "
-            f"FY{int(wc.index[-1])}, so short-term obligations could only be met from "
-            f"new borrowing or shareholder support, not from operations.\n"
-            f"- Capital injections are visible as gold bars, but they are absorbed by the "
-            f"accumulated loss rather than rebuilding the equity base."
-        )
+        if neg_equity.empty or wc.empty:
+            st.markdown("- Insufficient data in the selected range.")
+        else:
+            st.markdown(
+                f"- Equity turns negative from FY{int(neg_equity.min())} and stays negative: "
+                f"liabilities exceed assets, which is technical insolvency and the trigger "
+                f"discussed in the going-concern and business-rescue analysis.\n"
+                f"- The working-capital deficit widens to {rm(wc.iloc[-1])} by "
+                f"FY{int(wc.index[-1])}, so short-term obligations could only be met from "
+                f"new borrowing or shareholder support, not from operations.\n"
+                f"- Capital injections are visible as gold bars, but they are absorbed by the "
+                f"accumulated loss rather than rebuilding the equity base."
+            )
 
 # --------------------------------------------------------------------------
 # TAB 4 — Cash and funding
@@ -859,17 +869,20 @@ with tab_distress:
         flags = flag_matrix(ent)
         counts = flags.sum(axis=1)
         breach = counts[counts >= 5]
-        st.markdown(
-            f"- The Z''-score falls from {num(z.iloc[0], 2)} in FY{int(z.index[0])} to "
-            f"{num(z.iloc[-1], 2)} in FY{int(z.index[-1])}, far below the 4.15 distress "
-            f"threshold, so statistical failure prediction flagged this business years "
-            f"before business rescue was applied for in December 2019.\n"
-            + (f"- At least five of the ten warning signals were simultaneously active "
-               f"from FY{int(breach.index.min())} onward.\n" if len(breach) else "")
-            + f"- Decomposition shows the score is driven by X₂ and X₄ — accumulated "
-              f"losses and negative equity — rather than by a single bad trading year, "
-              f"which is what distinguishes structural failure from a cyclical downturn."
-        )
+        if z.empty:
+            st.markdown("- Insufficient data in the selected range.")
+        else:
+            st.markdown(
+                f"- The Z''-score falls from {num(z.iloc[0], 2)} in FY{int(z.index[0])} to "
+                f"{num(z.iloc[-1], 2)} in FY{int(z.index[-1])}, far below the 4.15 distress "
+                f"threshold, so statistical failure prediction flagged this business years "
+                f"before business rescue was applied for in December 2019.\n"
+                + (f"- At least five of the ten warning signals were simultaneously active "
+                   f"from FY{int(breach.index.min())} onward.\n" if len(breach) else "")
+                + f"- Decomposition shows the score is driven by X₂ and X₄ — accumulated "
+                  f"losses and negative equity — rather than by a single bad trading year, "
+                  f"which is what distinguishes structural failure from a cyclical downturn."
+            )
 
 # --------------------------------------------------------------------------
 # TAB 6 — Predictive analytics (ML outputs from saa_ml.py)
