@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import json
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -98,6 +100,20 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 def blank_years(frame: pd.DataFrame) -> pd.DataFrame:
     """Insert the missing FY2013/FY2014 so every series breaks honestly."""
     return frame.set_index("year").reindex(YEARS).reset_index()
+
+
+@st.cache_data(show_spinner=False)
+def load_ml() -> tuple[dict, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Load ML outputs produced by saa_ml.py, or return empty structures."""
+    def _csv(name):
+        p = DATA_DIR / name
+        return pd.read_csv(p) if p.exists() else pd.DataFrame()
+
+    meta_path = DATA_DIR / "ml_metrics.json"
+    if not meta_path.exists():
+        return {}, pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
+    meta = json.loads(meta_path.read_text())
+    return meta, _csv("ml_saa_scores.csv"), _csv("ml_feature_importance.csv"), _csv("ml_roc.csv")
 
 
 @st.cache_data(show_spinner=False)
@@ -323,9 +339,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_overview, tab_profit, tab_position, tab_cash, tab_distress, tab_data = st.tabs(
+tab_overview, tab_profit, tab_position, tab_cash, tab_distress, tab_ml, tab_data = st.tabs(
     ["Overview", "Profitability", "Financial position", "Cash & funding",
-     "Distress & red flags", "Data"]
+     "Distress & red flags", "Predictive analytics", "Data"]
 )
 
 # --------------------------------------------------------------------------
@@ -856,7 +872,191 @@ with tab_distress:
         )
 
 # --------------------------------------------------------------------------
-# TAB 6 — Data and export
+# TAB 6 — Predictive analytics (ML outputs from saa_ml.py)
+# --------------------------------------------------------------------------
+with tab_ml:
+    ml_meta, ml_scores, ml_importance, ml_roc = load_ml()
+
+    if not ml_meta:
+        st.info(
+            "ML outputs not found. Generate them first:\n\n"
+            "```\npython saa_ml.py --horizon 1 --arff-dir raw --outdir data\n```\n\n"
+            "You need the Polish Companies Bankruptcy dataset (UCI, DOI 10.24432/C5F600) "
+            "placed as `.arff` files inside the `raw/` folder."
+        )
+    else:
+        model_names = list(ml_meta.get("models", {}).keys())
+        lr_key = next((m for m in model_names if "logistic" in m.lower()), model_names[0])
+        rf_key = next((m for m in model_names if "forest" in m.lower()), model_names[-1])
+        lr_meta = ml_meta["models"][lr_key]
+        rf_meta = ml_meta["models"][rf_key]
+        horizon = ml_meta.get("horizon_years", 1)
+
+        # ── KPI row ──────────────────────────────────────────────────────────
+        focus_row = ml_scores[ml_scores["year"] == focus] if not ml_scores.empty else pd.DataFrame()
+        lr_prob = focus_row[lr_key].values[0] * 100 if not focus_row.empty else np.nan
+        rf_prob = focus_row[rf_key].values[0] * 100 if not focus_row.empty else np.nan
+        best_auc = max(lr_meta["cv_roc_auc"], rf_meta["cv_roc_auc"])
+        best_recall = max(lr_meta["tuned_recall"], rf_meta["tuned_recall"])
+        n_train = ml_meta.get("training_rows", 0)
+        n_fail = ml_meta.get("training_failures", 0)
+
+        cards = st.columns(5)
+        kpi(cards[0], f"Failure probability FY{focus} · {lr_key.split()[0]}",
+            f"{lr_prob:.1f}%" if pd.notna(lr_prob) else "—",
+            f"{horizon}-year horizon", ORANGE if lr_prob > 50 else TEAL)
+        kpi(cards[1], f"Failure probability FY{focus} · {rf_key.split()[0]}",
+            f"{rf_prob:.1f}%" if pd.notna(rf_prob) else "—",
+            f"{horizon}-year horizon", ORANGE if rf_prob > 50 else TEAL)
+        kpi(cards[2], "Best cross-validated AUC", f"{best_auc:.3f}",
+            "5-fold stratified", CYAN)
+        kpi(cards[3], "Best recall (tuned cut-off)",
+            f"{best_recall:.3f}", "share of failures caught", AMBER)
+        kpi(cards[4], "Training sample", f"{n_train:,}",
+            f"{n_fail:,} failures", MUTED)
+
+        st.markdown("")
+
+        # ── SAA failure probability over time ────────────────────────────────
+        st.markdown("### SAA failure probability, scored year by year")
+        st.markdown(
+            f"<div style='font-family:IBM Plex Mono,monospace;font-size:.82rem;"
+            f"color:{MUTED};margin-bottom:.6rem'>Probability of failure within "
+            f"one year (%)</div>",
+            unsafe_allow_html=True,
+        )
+        fig = go.Figure()
+        period_bands(fig, ent[ent["year"].isin(ml_scores["year"])][["year", "period"]])
+        for col, name, colour in [
+            (lr_key, "Logistic regression", ORANGE),
+            (rf_key, "Random forest", CYAN),
+        ]:
+            if col not in ml_scores.columns:
+                continue
+            pct = ml_scores[col] * 100
+            fig.add_scatter(
+                x=ml_scores["year"], y=pct, name=name, mode="lines+markers+text",
+                connectgaps=False, line=dict(color=colour, width=2.5),
+                marker=dict(size=8),
+                text=[f"{v:.0f}%" for v in pct],
+                textposition="top center",
+                textfont=dict(family="IBM Plex Mono, monospace", size=10, color=colour),
+            )
+        lr_cut = lr_meta["tuned_threshold"] * 100
+        rf_cut = rf_meta["tuned_threshold"] * 100
+        fig.add_hline(y=lr_cut, line_dash="dot", line_color=ORANGE, line_width=1.2,
+                      annotation_text=f"Logistic cut-off {lr_cut:.0f}%",
+                      annotation_position="bottom right",
+                      annotation_font=dict(size=10, color=ORANGE))
+        fig.add_hline(y=rf_cut, line_dash="dot", line_color=CYAN, line_width=1.2,
+                      annotation_text=f"Random forest cut-off {rf_cut:.0f}%",
+                      annotation_position="bottom right",
+                      annotation_font=dict(size=10, color=CYAN))
+        fig.update_layout(
+            title="SAA failure probability vs one-year horizon cut-offs",
+            yaxis=dict(title="%", ticksuffix="%", range=[0, 125]),
+        )
+        show(fig, 430)
+
+        # ── ML vs Z-score  |  ROC curves ────────────────────────────────────
+        left, right = st.columns(2)
+
+        with left:
+            merged = ml_scores.merge(
+                ent[["year", "altman_z"]], on="year", how="left"
+            )
+            fig = go.Figure()
+            if lr_key in merged.columns:
+                fig.add_bar(
+                    x=merged["year"], y=merged[lr_key] * 100,
+                    name="Failure probability (logistic)", marker_color=ORANGE,
+                )
+            fig.add_scatter(
+                x=merged["year"], y=merged["altman_z"], name="Altman Z''",
+                yaxis="y2", mode="lines+markers", connectgaps=False,
+                line=dict(color=GOLD, width=2.4), marker=dict(size=7),
+            )
+            fig.update_layout(
+                title="Machine learning against the classical Z''-score",
+                yaxis=dict(title="Probability %", ticksuffix="%"),
+                yaxis2=dict(title="Z''-score", overlaying="y", side="right",
+                            showgrid=False),
+            )
+            show(fig, 400)
+
+        with right:
+            if not ml_roc.empty:
+                fig = go.Figure()
+                colours_roc = {lr_key: ORANGE, rf_key: CYAN}
+                for model_name in ml_roc["model"].unique():
+                    subset = ml_roc[ml_roc["model"] == model_name]
+                    auc = ml_meta["models"][model_name]["holdout_roc_auc"]
+                    fig.add_scatter(
+                        x=subset["fpr"], y=subset["tpr"],
+                        name=f"{model_name} (AUC {auc:.3f})",
+                        mode="lines",
+                        line=dict(color=colours_roc.get(model_name, VIOLET), width=2.2),
+                    )
+                fig.add_scatter(
+                    x=[0, 1], y=[0, 1], name="Random",
+                    mode="lines", line=dict(color=MUTED, dash="dash", width=1),
+                )
+                fig.update_layout(
+                    title="ROC curves on the held-out test set",
+                    xaxis=dict(title="False positive rate"),
+                    yaxis=dict(title="True positive rate"),
+                )
+                show(fig, 400)
+
+        # ── Feature importance  |  Odds ratios ──────────────────────────────
+        if not ml_importance.empty:
+            left, right = st.columns(2)
+
+            with left:
+                imp = ml_importance.sort_values("rf_importance", ascending=True)
+                fig = go.Figure(go.Bar(
+                    x=imp["rf_importance"], y=imp["feature"], orientation="h",
+                    marker_color=CYAN,
+                    text=imp["rf_importance"].map(lambda v: f"{v:.3f}"),
+                    textposition="outside",
+                    textfont=dict(family="IBM Plex Mono, monospace", size=10),
+                ))
+                fig.update_layout(
+                    title="Which ratios drive the prediction (random forest)",
+                    xaxis=dict(title="Mean decrease in impurity"),
+                )
+                show(fig, 400)
+
+            with right:
+                st.markdown("### Odds ratios")
+                odds = (ml_importance[["feature", "definition", "lr_odds_ratio_per_sd"]]
+                        .sort_values("lr_odds_ratio_per_sd", ascending=False)
+                        .reset_index(drop=True))
+                table(odds.style.format({"lr_odds_ratio_per_sd": "{:.3f}"}))
+                st.caption(
+                    "Odds multiplier per one standard-deviation increase in the ratio, "
+                    "holding all others constant. Values above 1.0 increase failure risk; "
+                    "below 1.0 reduce it."
+                )
+
+        with st.expander("Interpretation — what this view shows"):
+            st.markdown(
+                f"- Models trained on {n_train:,} firm-years ({n_fail:,} failures) from "
+                f"the Polish Companies Bankruptcy benchmark dataset, then scored against "
+                f"SAA's own published ratios as an out-of-sample case study.\n"
+                f"- Logistic regression (AUC {lr_meta['cv_roc_auc']:.3f}) and random "
+                f"forest (AUC {rf_meta['cv_roc_auc']:.3f}) both place SAA in the "
+                f"high-failure zone from the early years of the decade.\n"
+                f"- The Youden-J tuned cut-off maximises the separation between true "
+                f"positives and false alarms; at that threshold the best model catches "
+                f"{best_recall:.1%} of actual failures in the held-out test set.\n"
+                f"- The feature-importance panel shows which ratios are most predictive "
+                f"across the benchmark population; the odds-ratio table shows their "
+                f"direction in the logistic model."
+            )
+
+# --------------------------------------------------------------------------
+# TAB 7 — Data and export
 # --------------------------------------------------------------------------
 with tab_data:
     st.markdown("### Parsed dataset")
