@@ -1,0 +1,111 @@
+{
+  "horizon_years": 1,
+  "training_file": "synthetic (financial-distress distribution)",
+  "training_rows": 6000,
+  "training_failures": 420,
+  "features": [
+    {
+      "name": "roa",
+      "definition": "net profit / total assets"
+    },
+    {
+      "name": "gearing",
+      "definition": "total liabilities / total assets"
+    },
+    {
+      "name": "wc_to_assets",
+      "definition": "working capital / total assets"
+    },
+    {
+      "name": "current_ratio",
+      "definition": "current assets / current liabilities"
+    },
+    {
+      "name": "retained_to_assets",
+      "definition": "retained earnings / total assets"
+    },
+    {
+      "name": "ebit_to_assets",
+      "definition": "EBIT / total assets"
+    },
+    {
+      "name": "equity_to_liabilities",
+      "definition": "book equity / total liabilities"
+    },
+    {
+      "name": "asset_turnover",
+      "definition": "sales / total assets"
+    },
+    {
+      "name": "equity_ratio",
+      "definition": "equity / total assets"
+    },
+    {
+      "name": "quick_ratio",
+      "definition": "(current assets - inventory) / current liabilities"
+    }
+  ],
+  "models": {
+    "Logistic regression": {
+      "cv_accuracy": 0.9873333333333333,
+      "cv_precision": 0.8586911935990278,
+      "cv_recall": 0.9833333333333334,
+      "cv_f1": 0.9163174673625448,
+      "cv_roc_auc": 0.9990314046765659,
+      "cv_recall_std": 0.012140522651411398,
+      "cv_roc_auc_std": 0.000668542453466714,
+      "holdout_accuracy": 0.9913333333333333,
+      "holdout_precision": 0.9107142857142857,
+      "holdout_recall": 0.9714285714285714,
+      "holdout_f1": 0.9400921658986175,
+      "holdout_roc_auc": 0.9987506400409626,
+      "confusion": {
+        "tn": 1385,
+        "fp": 10,
+        "fn": 3,
+        "tp": 102
+      },
+      "tuned_threshold": 0.6668856317485766,
+      "tuned_precision": 0.9444444444444444,
+      "tuned_recall": 0.9714285714285714,
+      "tuned_f1": 0.9577464788732394,
+      "tuned_confusion": {
+        "tn": 1389,
+        "fp": 6,
+        "fn": 3,
+        "tp": 102
+      }
+    },
+    "Random forest": {
+      "cv_accuracy": 0.9918333333333333,
+      "cv_precision": 0.9792804335349304,
+      "cv_recall": 0.9023809523809524,
+      "cv_f1": 0.9391239444434614,
+      "cv_roc_auc": 0.9979774705581157,
+      "cv_recall_std": 0.0265131636325239,
+      "cv_roc_auc_std": 0.0012038442882093396,
+      "holdout_accuracy": 0.9906666666666667,
+      "holdout_precision": 0.989247311827957,
+      "holdout_recall": 0.8761904761904762,
+      "holdout_f1": 0.9292929292929293,
+      "holdout_roc_auc": 0.9976446492575525,
+      "confusion": {
+        "tn": 1394,
+        "fp": 1,
+        "fn": 13,
+        "tp": 92
+      },
+      "tuned_threshold": 0.2011378515949606,
+      "tuned_precision": 0.8583333333333333,
+      "tuned_recall": 0.9809523809523809,
+      "tuned_f1": 0.9155555555555556,
+      "tuned_confusion": {
+        "tn": 1378,
+        "fp": 17,
+        "fn": 2,
+        "tp": 103
+      }
+    }
+  },
+  "source": "Synthetic training population based on published financial-distress ratio distributions (Altman 1968, Zmijewski 1984 literature)."
+}
