@@ -467,7 +467,7 @@ focus = st.sidebar.selectbox(
     index=len(focus_years) - 1,
 )
 forecast_scenario = st.sidebar.selectbox(
-    "Forecast scenario (Q4.3 / Q4.5)",
+    "Forecast scenario",
     ["Bear", "Base", "Bull"], index=1,
 )
 st.sidebar.markdown(
@@ -1153,7 +1153,7 @@ with tab_forecast:
             lines.append(f"- **EBITDA margin FY{yr}:** {m:.1%}")
         st.markdown("\n".join(lines))
 
-    with st.expander("Interpretation — Q4.3 forecast"):
+    with st.expander("Interpretation — forecast"):
         ev_sign = "positive" if fc_meta["ev"] >= 0 else "negative"
         eq_sign = "positive" if fc_meta["eq"] >= 0 else "negative"
         st.markdown(
