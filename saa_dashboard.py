@@ -36,6 +36,34 @@ PERIOD_COLOURS = {
     "Collapse": ORANGE,
 }
 
+# Q4.3 / Q4.5 forecast & valuation constants
+_BASE_REV     = 26_992.0   # FY2019 revenue R million
+_NET_DEBT     = 9_930.0    # FY2019 net debt R million
+_SHARES_M     = 13_402.0   # million issued shares
+_FORECAST_TAX = 0.28
+FORECAST_YEARS = [2020, 2021, 2022, 2023, 2024]
+
+SCENARIOS_DEF: dict[str, dict] = {
+    "Bear": dict(
+        rev_growth    = [-0.05, -0.02,  0.00,  0.01,  0.01],
+        ebitda_margin = [-0.10, -0.08, -0.06, -0.04, -0.03],
+        da_pct=0.035, capex_pct=0.025, nwc_pct=0.01,
+        wacc=0.14,  g=0.010, colour=ORANGE,
+    ),
+    "Base": dict(
+        rev_growth    = [ 0.02,  0.04,  0.05,  0.05,  0.04],
+        ebitda_margin = [-0.05,  0.00,  0.03,  0.05,  0.06],
+        da_pct=0.035, capex_pct=0.040, nwc_pct=0.01,
+        wacc=0.12,  g=0.025, colour=AMBER,
+    ),
+    "Bull": dict(
+        rev_growth    = [ 0.05,  0.08,  0.08,  0.07,  0.06],
+        ebitda_margin = [ 0.00,  0.05,  0.08,  0.10,  0.11],
+        da_pct=0.035, capex_pct=0.045, nwc_pct=0.01,
+        wacc=0.105, g=0.030, colour=TEAL,
+    ),
+}
+
 st.set_page_config(
     page_title="SAA Financial Intelligence Dashboard",
     page_icon="",
@@ -179,6 +207,57 @@ def load_ml() -> tuple[dict, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         return {}, pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     meta = json.loads(meta_path.read_text())
     return meta, _csv("ml_saa_scores.csv"), _csv("ml_feature_importance.csv"), _csv("ml_roc.csv")
+
+
+def compute_scenario(s_name: str) -> tuple[pd.DataFrame, dict]:
+    """Build 5-year FCFF forecast and DCF value for one scenario."""
+    s = SCENARIOS_DEF[s_name]
+    prev = _BASE_REV
+    rows = []
+    for i, yr in enumerate(FORECAST_YEARS):
+        rev    = prev * (1 + s["rev_growth"][i])
+        ebitda = rev * s["ebitda_margin"][i]
+        da     = rev * s["da_pct"]
+        ebit   = ebitda - da
+        tax    = -ebit * _FORECAST_TAX if ebit > 0 else 0.0
+        nopat  = ebit + tax
+        capex  = -rev * s["capex_pct"]
+        dnwc   = -(rev - prev) * s["nwc_pct"]
+        fcff   = nopat + da + capex + dnwc
+        rows.append(dict(year=yr, revenue=rev, ebitda=ebitda, da=da,
+                         ebit=ebit, tax=tax, nopat=nopat,
+                         capex=capex, delta_nwc=dnwc, fcff=fcff))
+        prev = rev
+    df = pd.DataFrame(rows)
+    wacc, g = s["wacc"], s["g"]
+    n = len(FORECAST_YEARS)
+    df["pv_fcff"] = [df.iloc[i]["fcff"] / (1 + wacc) ** (i + 1) for i in range(n)]
+    sum_pv = df["pv_fcff"].sum()
+    tv     = df.iloc[-1]["fcff"] * (1 + g) / (wacc - g)
+    pv_tv  = tv / (1 + wacc) ** n
+    ev     = sum_pv + pv_tv
+    eq     = ev - _NET_DEBT
+    return df, dict(sum_pv=sum_pv, tv=tv, pv_tv=pv_tv, ev=ev,
+                    eq=eq, eps=eq / _SHARES_M, wacc=wacc, g=g)
+
+
+def sensitivity_ev() -> pd.DataFrame:
+    """Firm-value sensitivity grid (WACC × terminal-g) using Bull FCFF path."""
+    bull_df, _ = compute_scenario("Bull")
+    fcffs = bull_df["fcff"].values
+    n = len(FORECAST_YEARS)
+    wacc_list = [0.09, 0.10, 0.11, 0.12, 0.13, 0.14, 0.15]
+    g_list    = [0.010, 0.015, 0.020, 0.025, 0.030, 0.035]
+    rows = {}
+    for w in wacc_list:
+        row = {}
+        for g in g_list:
+            pv   = sum(fcffs[i] / (1 + w) ** (i + 1) for i in range(n))
+            tv   = fcffs[-1] * (1 + g) / (w - g)
+            pv_tv= tv / (1 + w) ** n
+            row[f"{g:.1%}"] = round(pv + pv_tv)
+        rows[f"{w:.1%}"] = row
+    return pd.DataFrame(rows).T
 
 
 @st.cache_data(show_spinner=False)
@@ -387,6 +466,10 @@ focus = st.sidebar.selectbox(
     "Focus year (waterfalls and breakdowns)", focus_years,
     index=len(focus_years) - 1,
 )
+forecast_scenario = st.sidebar.selectbox(
+    "Forecast scenario (Q4.3 / Q4.5)",
+    ["Bear", "Base", "Bull"], index=1,
+)
 st.sidebar.markdown(
     f"<div style='font-family:IBM Plex Mono,monospace;font-size:.72rem;"
     f"color:{MUTED};padding-top:.6rem;border-top:1px solid {LINE}'>"
@@ -404,9 +487,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_overview, tab_profit, tab_position, tab_cash, tab_distress, tab_ml, tab_data = st.tabs(
+tab_overview, tab_profit, tab_position, tab_cash, tab_distress, tab_forecast, tab_valuation, tab_ml, tab_data = st.tabs(
     ["Overview", "Profitability", "Financial position", "Cash & funding",
-     "Distress & red flags", "Predictive analytics", "Data"]
+     "Distress & red flags", "Forecast", "Valuation",
+     "Predictive analytics", "Data"]
 )
 
 # --------------------------------------------------------------------------
@@ -950,7 +1034,335 @@ with tab_distress:
             )
 
 # --------------------------------------------------------------------------
-# TAB 6 — Predictive analytics (ML outputs from saa_ml.py)
+# TAB 6 — Forecast (Q4.3: integrated 5-year forecast, FY2020-FY2024)
+# --------------------------------------------------------------------------
+with tab_forecast:
+    st.markdown("### Q4.3 — Integrated Five-Year Forecast (FY2020–FY2024)")
+    st.caption(
+        f"Scenario selected: **{forecast_scenario}**  ·  "
+        "Change via the sidebar selector  ·  Base year: FY2019 revenue R26,992m"
+    )
+
+    fc_df, fc_meta = compute_scenario(forecast_scenario)
+    s_col = SCENARIOS_DEF[forecast_scenario]["colour"]
+
+    # ── KPI row ──────────────────────────────────────────────────────────────
+    cards = st.columns(5)
+    rev24   = fc_df.iloc[-1]["revenue"]
+    ebitda24 = fc_df.iloc[-1]["ebitda"]
+    kpi(cards[0], f"Revenue FY2024 ({forecast_scenario})", rm(rev24),
+        f"from R26,992m in FY2019", s_col)
+    kpi(cards[1], f"EBITDA FY2024 ({forecast_scenario})", rm(ebitda24),
+        f"{ebitda24/rev24*100:.1f}% margin",
+        TEAL if ebitda24 >= 0 else ORANGE)
+    kpi(cards[2], "Enterprise value", rm(fc_meta["ev"]),
+        f"WACC {fc_meta['wacc']:.1%} · g {fc_meta['g']:.1%}",
+        TEAL if fc_meta["ev"] >= 0 else ORANGE)
+    kpi(cards[3], "Implied equity value", rm(fc_meta["eq"]),
+        f"EV less R{_NET_DEBT:,.0f}m net debt",
+        TEAL if fc_meta["eq"] >= 0 else ORANGE)
+    kpi(cards[4], "Equity value / share", f"R {fc_meta['eps']:.3f}",
+        f"{_SHARES_M:,.0f}m issued shares",
+        TEAL if fc_meta["eps"] >= 0 else ORANGE)
+
+    st.markdown("")
+    left, right = st.columns(2)
+
+    # ── Revenue & EBITDA ─────────────────────────────────────────────────────
+    with left:
+        hist = ent[ent["year"] >= 2015][["year", "total_income", "ebitda"]].copy()
+        fc_combo = fc_df[["year", "revenue", "ebitda"]].copy()
+
+        fig = go.Figure()
+        fig.add_bar(x=hist["year"], y=hist["total_income"],
+                    name="Revenue (historical)", marker_color=MUTED, opacity=0.60)
+        fig.add_bar(x=fc_combo["year"], y=fc_combo["revenue"],
+                    name="Revenue (forecast)", marker_color=CYAN, opacity=0.85)
+        # EBITDA line on secondary axis
+        all_years = list(hist["year"]) + list(fc_combo["year"])
+        all_ebitda = list(hist["ebitda"]) + list(fc_combo["ebitda"])
+        fig.add_scatter(x=all_years, y=all_ebitda,
+                        name="EBITDA", mode="lines+markers", yaxis="y2",
+                        line=dict(color=s_col, width=2.4),
+                        marker=dict(size=7))
+        fig.add_vline(x=2019.5, line_dash="dot", line_color=MUTED, line_width=1)
+        fig.update_layout(
+            title=f"Revenue & EBITDA — historical + {forecast_scenario} forecast",
+            barmode="group",
+            yaxis=dict(title="R million"),
+            yaxis2=dict(title="EBITDA (R million)", overlaying="y",
+                        side="right", showgrid=False),
+            legend=dict(orientation="h", y=1.06),
+        )
+        show(fig, 420)
+
+    # ── FCFF bar chart ────────────────────────────────────────────────────────
+    with right:
+        colours_fcff = [TEAL if v >= 0 else ORANGE for v in fc_df["fcff"]]
+        fig = go.Figure()
+        fig.add_bar(x=fc_df["year"], y=fc_df["fcff"],
+                    name="FCFF", marker_color=colours_fcff,
+                    text=[f"{v:,.0f}" for v in fc_df["fcff"]],
+                    textposition="outside")
+        fig.add_hline(y=0, line_color=MUTED, line_width=1)
+        fig.update_layout(
+            title=f"Free Cash Flow to Firm (FCFF) — {forecast_scenario} scenario",
+            yaxis=dict(title="R million"),
+        )
+        show(fig, 420)
+
+    # ── Forecast detail table ─────────────────────────────────────────────────
+    st.markdown("### Five-year forecast detail (R million)")
+    disp = fc_df[["year", "revenue", "ebitda", "da", "ebit",
+                   "tax", "nopat", "capex", "delta_nwc", "fcff", "pv_fcff"]].copy()
+    disp.columns = ["Year", "Revenue", "EBITDA", "D&A", "EBIT",
+                    "Tax shield", "NOPAT", "Capex", "ΔNWC", "FCFF", "PV of FCFF"]
+    table(disp.style.format(
+        {c: "{:,.0f}" for c in disp.columns if c != "Year"}
+    ))
+
+    # ── DCF bridge table ──────────────────────────────────────────────────────
+    st.markdown("### DCF valuation summary")
+    dcf_rows = [
+        ("Sum of PV of explicit FCFFs (FY2020–2024)", fc_meta["sum_pv"]),
+        ("Terminal value (TV)",                        fc_meta["tv"]),
+        ("PV of terminal value",                       fc_meta["pv_tv"]),
+        ("Enterprise (firm) value",                    fc_meta["ev"]),
+        ("Less: net debt at FY2019",                  -_NET_DEBT),
+        ("Implied equity value",                       fc_meta["eq"]),
+    ]
+    dcf_df = pd.DataFrame(dcf_rows, columns=["Item", "R million"])
+    table(dcf_df.style.format({"R million": "{:,.0f}"}))
+
+    with st.expander("Scenario assumptions"):
+        s_def = SCENARIOS_DEF[forecast_scenario]
+        lines = [
+            f"- **Base year revenue (FY2019):** R{_BASE_REV:,.0f}m",
+            f"- **WACC:** {s_def['wacc']:.1%}",
+            f"- **Terminal growth rate (g):** {s_def['g']:.1%}",
+            f"- **D&A % revenue:** {s_def['da_pct']:.1%}",
+            f"- **Capex % revenue:** {s_def['capex_pct']:.1%}",
+            f"- **NWC change % revenue growth:** {s_def['nwc_pct']:.1%}",
+            f"- **Tax rate:** {_FORECAST_TAX:.0%}",
+            f"- **Net debt at FY2019:** R{_NET_DEBT:,.0f}m",
+            f"- **Issued shares:** {_SHARES_M:,.0f}m",
+        ]
+        for yr, g in zip(FORECAST_YEARS, s_def["rev_growth"]):
+            lines.append(f"- **Revenue growth FY{yr}:** {g:.1%}")
+        for yr, m in zip(FORECAST_YEARS, s_def["ebitda_margin"]):
+            lines.append(f"- **EBITDA margin FY{yr}:** {m:.1%}")
+        st.markdown("\n".join(lines))
+
+    with st.expander("Interpretation — Q4.3 forecast"):
+        ev_sign = "positive" if fc_meta["ev"] >= 0 else "negative"
+        eq_sign = "positive" if fc_meta["eq"] >= 0 else "negative"
+        st.markdown(
+            f"- The {forecast_scenario} scenario projects revenue reaching "
+            f"{rm(rev24)} by FY2024 from a FY2019 base of R26,992m, with EBITDA "
+            f"margin reaching {ebitda24/rev24*100:.1f}%.\n"
+            f"- Terminal value is the dominant value driver: in recovery scenarios "
+            f"with positive EBITDA, the terminal value accounts for the majority of "
+            f"the enterprise value.\n"
+            f"- The implied enterprise value is {rm(fc_meta['ev'])} ({ev_sign}); "
+            f"after deducting R{_NET_DEBT:,.0f}m of net debt, equity value is "
+            f"{rm(fc_meta['eq'])} ({eq_sign}), equivalent to "
+            f"R{fc_meta['eps']:.3f} per share.\n"
+            f"- A negative equity value is consistent with technical insolvency, "
+            f"which SAA formally entered in December 2019. Under the Bear scenario "
+            f"the restructuring does not generate sufficient value to cover creditors."
+        )
+
+
+# --------------------------------------------------------------------------
+# TAB 7 — Valuation (Q4.5: DCF, sensitivity, scenario comparison)
+# --------------------------------------------------------------------------
+with tab_valuation:
+    st.markdown("### Q4.5 — Valuation & Sensitivity Analysis")
+    st.caption(
+        "DCF valuation using three turnaround scenarios calibrated to FY2015–2019 actuals. "
+        "Sensitivity grid uses the Bull-case FCFF path. "
+        f"Selected scenario for KPIs: **{forecast_scenario}** (change via sidebar)."
+    )
+
+    # Compute all three scenarios once
+    bear_df, bear_m = compute_scenario("Bear")
+    base_df, base_m = compute_scenario("Base")
+    bull_df, bull_m = compute_scenario("Bull")
+    fc_m = {"Bear": bear_m, "Base": base_m, "Bull": bull_m}[forecast_scenario]
+
+    # ── KPI row ───────────────────────────────────────────────────────────────
+    cards = st.columns(4)
+    kpi(cards[0], f"Enterprise value · {forecast_scenario}", rm(fc_m["ev"]),
+        "DCF on 5-yr FCFF + terminal value",
+        TEAL if fc_m["ev"] >= 0 else ORANGE)
+    kpi(cards[1], f"Equity value · {forecast_scenario}", rm(fc_m["eq"]),
+        "EV less FY2019 net debt",
+        TEAL if fc_m["eq"] >= 0 else ORANGE)
+    kpi(cards[2], f"Equity / share · {forecast_scenario}",
+        f"R {fc_m['eps']:.3f}",
+        f"{_SHARES_M:,.0f}m issued shares",
+        TEAL if fc_m["eps"] >= 0 else ORANGE)
+    kpi(cards[3], "Dividend discount model", "N/A",
+        "No dividends declared in analytical period", MUTED)
+
+    st.markdown("")
+    left, right = st.columns(2)
+
+    # ── Scenario comparison bar chart ─────────────────────────────────────────
+    with left:
+        scenarios  = ["Bear", "Base", "Bull"]
+        ev_vals    = [bear_m["ev"], base_m["ev"], bull_m["ev"]]
+        eq_vals    = [bear_m["eq"], base_m["eq"], bull_m["eq"]]
+        s_colours  = [SCENARIOS_DEF[s]["colour"] for s in scenarios]
+
+        fig = go.Figure()
+        fig.add_bar(x=scenarios, y=ev_vals, name="Enterprise value",
+                    marker_color=s_colours, opacity=0.90,
+                    text=[f"{v:,.0f}" for v in ev_vals], textposition="outside")
+        fig.add_bar(x=scenarios, y=eq_vals, name="Equity value",
+                    marker_color=s_colours, opacity=0.45,
+                    text=[f"{v:,.0f}" for v in eq_vals], textposition="outside")
+        fig.add_hline(y=0, line_color=MUTED, line_width=1)
+        fig.update_layout(
+            title="Enterprise & equity value by scenario (R million)",
+            barmode="group",
+            yaxis=dict(title="R million"),
+            legend=dict(orientation="h", y=1.06),
+        )
+        show(fig, 440)
+
+    # ── Sensitivity heatmap ───────────────────────────────────────────────────
+    with right:
+        sens = sensitivity_ev()
+        fig = go.Figure(go.Heatmap(
+            z=sens.values,
+            x=sens.columns.tolist(),
+            y=sens.index.tolist(),
+            colorscale=[[0, ORANGE], [0.45, SURFACE], [1, TEAL]],
+            zmid=0,
+            text=[[f"{v:,.0f}" for v in row] for row in sens.values],
+            texttemplate="%{text}",
+            textfont=dict(family="IBM Plex Mono, monospace", size=9),
+            hovertemplate="WACC %{y}  g %{x}<br>EV R%{z:,.0f}m<extra></extra>",
+            showscale=True,
+            colorbar=dict(title="R million", tickformat=",.0f"),
+        ))
+        fig.update_layout(
+            title="Sensitivity — Enterprise value (R million)<br>"
+                  "<sup>WACC × terminal growth rate · Bull FCFF path</sup>",
+            xaxis=dict(title="Terminal growth rate (g)"),
+            yaxis=dict(title="WACC"),
+        )
+        show(fig, 440)
+
+    # ── Scenario comparison table ─────────────────────────────────────────────
+    st.markdown("### Scenario comparison (R million)")
+    comp_data = {
+        "Metric": ["Enterprise value", "Implied equity value", "Equity per share (R)"],
+        "Bear":   [f"{bear_m['ev']:,.0f}", f"{bear_m['eq']:,.0f}", f"{bear_m['eps']:.3f}"],
+        "Base":   [f"{base_m['ev']:,.0f}", f"{base_m['eq']:,.0f}", f"{base_m['eps']:.3f}"],
+        "Bull":   [f"{bull_m['ev']:,.0f}", f"{bull_m['eq']:,.0f}", f"{bull_m['eps']:.3f}"],
+    }
+    table(pd.DataFrame(comp_data))
+
+    # ── WACC assumptions ──────────────────────────────────────────────────────
+    st.markdown("### CAPM / WACC assumptions")
+    wacc_tbl = pd.DataFrame({
+        "Parameter": [
+            "Risk-free rate (Rf)", "Beta (unlisted proxy)", "Equity risk premium (ERP)",
+            "Cost of equity (CAPM)", "Pre-tax cost of debt (Kd)", "Tax rate",
+            "WACC — Bear", "WACC — Base", "WACC — Bull",
+            "Terminal growth — Bear", "Terminal growth — Base", "Terminal growth — Bull",
+        ],
+        "Value": [
+            "8.0%", "1.3", "5.5%", "≈15.2%  (Rf + β·ERP)",
+            "10.0%", "28.0%",
+            "14.0%", "12.0%", "10.5%",
+            "1.0%", "2.5%", "3.0%",
+        ],
+        "Basis": [
+            "SA long-bond proxy", "Unlisted airline estimate", "Assumption (Damodaran)",
+            "CAPM formula", "Assumption", "SA statutory rate",
+            "Distress / no recovery", "Rescue plan executes", "Fast restructuring",
+            "", "", "",
+        ],
+    })
+    table(wacc_tbl)
+
+    # ── Q4.4 linear regression note ───────────────────────────────────────────
+    st.markdown("### Q4.4 — Book-value-per-share proxy (linear regression)")
+    bvps_data = {
+        "Year":    [2015, 2016, 2017, 2018, 2019],
+        "Equity (Rm)": [-9_243, -12_540, -17_864, -13_281, -14_520],
+        "Shares (m)":  [13_397,  13_397,  13_402,  13_397,  13_402],
+        "BVPS proxy":  [-0.690,  -0.936,  -1.333,  -0.991,  -1.083],
+    }
+    bvps_df = pd.DataFrame(bvps_data)
+    table(bvps_df.style.format(
+        {"Equity (Rm)": "{:,.0f}", "Shares (m)": "{:,.0f}", "BVPS proxy": "{:.3f}"}
+    ))
+
+    # Linear regression chart
+    years_hist  = np.array(bvps_data["Year"], dtype=float)
+    bvps_hist   = np.array(bvps_data["BVPS proxy"])
+    slope       = -0.084
+    intercept   = 168.883
+    years_line  = np.arange(2015, 2031)
+    bvps_line   = slope * years_line + intercept
+
+    fig = go.Figure()
+    fig.add_scatter(x=years_hist, y=bvps_hist, mode="markers",
+                    name="Actual BVPS proxy",
+                    marker=dict(color=CYAN, size=9))
+    fig.add_scatter(x=years_line, y=bvps_line, mode="lines",
+                    name=f"Linear fit (slope {slope}, intercept {intercept:.1f})",
+                    line=dict(color=AMBER, width=2, dash="dash"))
+    fig.add_vline(x=2019.5, line_dash="dot", line_color=MUTED, line_width=1)
+    fig.add_scatter(x=[2030], y=[bvps_line[-1]], mode="markers",
+                    name=f"FY2030 forecast: {bvps_line[-1]:.3f}",
+                    marker=dict(color=ORANGE, size=10, symbol="star"))
+    fig.add_hline(y=0, line_color=MUTED, line_width=1)
+    fig.update_layout(
+        title="Book-value-per-share proxy — linear regression & forecast to FY2030",
+        xaxis=dict(title="Year"),
+        yaxis=dict(title="R per share (proxy)"),
+        legend=dict(orientation="h", y=1.06),
+    )
+    show(fig, 380)
+
+    with st.expander("Interpretation — Q4.4 regression"):
+        st.markdown(
+            f"- Linear model: BVPS proxy = {slope} × year + {intercept:.3f}  "
+            f"(R² ≈ 0.68, 5 observations FY2015–2019).\n"
+            f"- Forecast at FY2030: R{bvps_line[-1]:.3f} per share, indicating that "
+            f"on the historical trend SAA's book value per share continues to deteriorate.\n"
+            f"- The regression is mechanistic; it does not incorporate the restructuring "
+            f"assumptions in the Bear/Base/Bull DCF scenarios above.\n"
+            f"- Quadratic extension (not shown) yields a FY2030 forecast of ≈ −R590 per share, "
+            f"driven by the accelerating losses in FY2017; both models should be treated as "
+            f"illustrative given the small sample."
+        )
+
+    with st.expander("Interpretation — valuation overall"):
+        st.markdown(
+            f"- SAA is not JSE-listed; no market share price exists. The DCF framework "
+            f"values the business as an operating entity by discounting unlevered FCFF at WACC.\n"
+            f"- **Bear** (WACC 14%, g 1%): failed restructuring, ongoing state dependence. "
+            f"Enterprise value {rm(bear_m['ev'])}, equity {rm(bear_m['eq'])}.\n"
+            f"- **Base** (WACC 12%, g 2.5%): business rescue plan executes; margins turn "
+            f"positive by FY2022. Enterprise value {rm(base_m['ev'])}, equity {rm(base_m['eq'])}.\n"
+            f"- **Bull** (WACC 10.5%, g 3%): rapid turnaround with strategic equity partner. "
+            f"Enterprise value {rm(bull_m['ev'])}, equity {rm(bull_m['eq'])}.\n"
+            f"- Terminal value accounts for the majority of enterprise value in the Bull case, "
+            f"underscoring the sensitivity to long-run margin and growth assumptions.\n"
+            f"- The sensitivity heatmap (right panel) shows that firm value swings from "
+            f"under R7,000m at the high-WACC, low-growth corner to over R21,000m at the "
+            f"opposite corner — a range of R14,000m — using the Bull FCFF path."
+        )
+
+
+# --------------------------------------------------------------------------
+# TAB 8 — Predictive analytics (ML outputs from saa_ml.py)
 # --------------------------------------------------------------------------
 with tab_ml:
     ml_meta, ml_scores, ml_importance, ml_roc = load_ml()
@@ -1252,7 +1664,7 @@ with tab_ml:
             st.error(f"Could not read the file: {exc}")
 
 # --------------------------------------------------------------------------
-# TAB 7 — Data and export
+# TAB 9 — Data and export
 # --------------------------------------------------------------------------
 with tab_data:
     st.markdown("### Parsed dataset")
