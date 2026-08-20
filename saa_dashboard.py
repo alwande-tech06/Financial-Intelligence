@@ -1037,7 +1037,7 @@ with tab_distress:
 # TAB 6 — Forecast (Q4.3: integrated 5-year forecast, FY2020-FY2024)
 # --------------------------------------------------------------------------
 with tab_forecast:
-    st.markdown("### Q4.3 — Integrated Five-Year Forecast (FY2020–FY2024)")
+    st.markdown("### Integrated Five-Year Forecast (FY2020–FY2024)")
     st.caption(
         f"Scenario selected: **{forecast_scenario}**  ·  "
         "Change via the sidebar selector  ·  Base year: FY2019 revenue R26,992m"
@@ -1177,7 +1177,7 @@ with tab_forecast:
 # TAB 7 — Valuation (Q4.5: DCF, sensitivity, scenario comparison)
 # --------------------------------------------------------------------------
 with tab_valuation:
-    st.markdown("### Q4.5 — Valuation & Sensitivity Analysis")
+    st.markdown("### Valuation & Sensitivity Analysis")
     st.caption(
         "DCF valuation using three turnaround scenarios calibrated to FY2015–2019 actuals. "
         "Sensitivity grid uses the Bull-case FCFF path. "
@@ -1290,7 +1290,7 @@ with tab_valuation:
     table(wacc_tbl)
 
     # ── Q4.4 linear regression note ───────────────────────────────────────────
-    st.markdown("### Q4.4 — Book-value-per-share proxy (linear regression)")
+    st.markdown("### Book-value-per-share proxy (linear regression)")
     bvps_data = {
         "Year":    [2015, 2016, 2017, 2018, 2019],
         "Equity (Rm)": [-9_243, -12_540, -17_864, -13_281, -14_520],
@@ -1330,7 +1330,7 @@ with tab_valuation:
     )
     show(fig, 380)
 
-    with st.expander("Interpretation — Q4.4 regression"):
+    with st.expander("Interpretation — regression"):
         st.markdown(
             f"- Linear model: BVPS proxy = {slope} × year + {intercept:.3f}  "
             f"(R² ≈ 0.68, 5 observations FY2015–2019).\n"
