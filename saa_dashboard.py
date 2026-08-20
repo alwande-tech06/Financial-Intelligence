@@ -1558,8 +1558,8 @@ with tab_ml:
     col_up, col_dl = st.columns([3, 1])
     with col_up:
         uploaded_file = st.file_uploader(
-            "Drop a CSV here to score airline-years through the fitted models.",
-            type="csv",
+            "Drop a CSV or Excel file here to score airline-years through the fitted models.",
+            type=["csv", "xlsx", "xls"],
             help="Must contain the ten ratio columns. "
                  "Add a `failed` column (0/1) if you want to offer retraining.",
         )
@@ -1581,7 +1581,10 @@ with tab_ml:
 
     if uploaded_file is not None:
         try:
-            up = pd.read_csv(uploaded_file)
+            if uploaded_file.name.lower().endswith((".xlsx", ".xls")):
+                up = pd.read_excel(uploaded_file)
+            else:
+                up = pd.read_csv(uploaded_file)
             missing_cols = [c for c in ML_FEATURES if c not in up.columns]
             if missing_cols:
                 st.error(f"Missing columns: {', '.join(missing_cols)}. "
